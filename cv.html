@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Hemant Verma | Computational Semiconductor Physics</title>
+    <meta name="description" content="Curriculum Vitae for Hemant Verma, Ph.D. candidate in computational semiconductor physics at NTU and Academia Sinica.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/publications.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: var(--light-gray);
+        }
+        .cv-wrapper {
+            max-width: 1100px;
+            margin: 0 auto 4rem;
+            padding: 0 1.5rem;
+        }
+        .cv-header {
+            text-align: center;
+            padding: 2rem 0 1.5rem;
+        }
+        .cv-header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.35rem;
+        }
+        .cv-tagline {
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+        .cv-meta {
+            color: var(--text-color);
+            margin-bottom: 0.35rem;
+        }
+        .cv-section {
+            background: #ffffff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            margin-bottom: 1rem;
+        }
+        .cv-section h2 {
+            margin-bottom: 0.75rem;
+            color: var(--primary-color);
+        }
+        .cv-list {
+            margin-left: 1.2rem;
+            line-height: 1.6;
+        }
+        .cv-list li {
+            margin-bottom: 0.4rem;
+        }
+        .cv-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+        .cv-grid .cv-section {
+            margin-bottom: 0;
+        }
+        .cv-subtitle {
+            font-weight: 600;
+            color: var(--secondary-color);
+            margin-bottom: 0.25rem;
+        }
+        .cv-note {
+            color: #555;
+            font-size: 0.95rem;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Hemant Verma</div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#research">Research</a></li>
+                <li><a href="publications.html">Writings</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="software.html">Software</a></li>
+                <li><a href="cv.html" class="active">CV</a></li>
+                <li><a href="index.html#contact">Connect</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="publications-hero">
+        <div class="section-container">
+            <h1>Curriculum Vitae</h1>
+            <p>Computational semiconductor physics | DFT, EPC, and NEGF transport</p>
+            <div class="publication-metrics">
+                <div class="metric">
+                    <span class="number">NTU</span>
+                    <span class="label">Ph.D. 2021-Present</span>
+                </div>
+                <div class="metric">
+                    <span class="number">IIT</span>
+                    <span class="label">M.Sc. Physics 2019-2021</span>
+                </div>
+                <div class="metric">
+                    <span class="number">HPC</span>
+                    <span class="label">DFT, EPC, NEGF workflows</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cv-wrapper">
+        <div class="cv-header">
+            <h1>Hemant Verma</h1>
+            <div class="cv-tagline">Ph.D. Candidate - Computational Semiconductor Physics</div>
+            <div class="cv-meta">National Taiwan University | Academia Sinica | IIT Jodhpur (M.Sc.)</div>
+            <div class="cv-meta">Email: <a href="mailto:Verma0001@as.edu.tw">Verma0001@as.edu.tw</a> | Phone: +886-908363245</div>
+            <div class="cv-meta">Website: <a href="https://hemant0723.github.io/academic-website/">hemant0723.github.io/academic-website/</a> | LinkedIn: <a href="https://www.linkedin.com/in/hemantverma2001/">hemantverma2001</a></div>
+        </div>
+
+        <div class="cv-section">
+            <h2>Professional Summary</h2>
+            <p>Computational semiconductor physicist linking first-principles simulations to TCAD-ready parameters. Experienced with DFT electronic structure, EPW-derived lifetimes, and translating atomistic results into mobility, relaxation, and band-alignment insights. Build Python/HPC automation and NanoDCAL NEGF workflows for 2D TMD transport and I-V analysis.</p>
+        </div>
+
+        <div class="cv-grid">
+            <div class="cv-section">
+                <h2>Education</h2>
+                <ul class="cv-list">
+                    <li><strong>Ph.D. in Physics</strong>, National Taiwan University (TIGP, Academia Sinica), 2021-Present. CGPA: 3.94/4.3.</li>
+                    <li><strong>M.Sc. in Physics</strong>, Indian Institute of Technology Jodhpur, 2019-2021. CGPA: 8.14/10.</li>
+                </ul>
+            </div>
+            <div class="cv-section">
+                <h2>Core Technical Competencies</h2>
+                <ul class="cv-list">
+                    <li>Electronic structure: band structure, DOS, effective mass trends, Fermi-level behavior.</li>
+                    <li>Electron-phonon coupling: EPC matrix elements, scattering rates, carrier lifetime extraction.</li>
+                    <li>Transport: Boltzmann transport, mobility trends, anisotropic transport interpretation.</li>
+                    <li>Quantum transport (NEGF): transmission spectra, quantum conductance trends, nanoscale transistor I-V workflow.</li>
+                    <li>HPC automation: parallel DFT workflows, convergence optimization, Python post-processing pipelines.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cv-section">
+            <h2>Research Interests</h2>
+            <ul class="cv-list">
+                <li>TCAD-oriented device physics: linking atomistic properties to device-level metrics (transport, lifetime, mobility trends).</li>
+                <li>Quantum transport for nanoscale FETs: NEGF-based transistor modeling and scaling behavior.</li>
+                <li>2D semiconductors (TMDs): channel physics, band alignment, and transport-limiting mechanisms.</li>
+            </ul>
+        </div>
+
+        <div class="cv-section">
+            <h2>Research Experience</h2>
+            <div class="cv-subtitle">Ph.D. Researcher - Electronic Structure, EPC and Transport Modeling (2021-Present)</div>
+            <div class="cv-note">Research Center for Applied Sciences (RCAS), Academia Sinica</div>
+            <ul class="cv-list">
+                <li>Large-scale DFT simulations (VASP, Quantum ESPRESSO, JDFTx) to characterize electronic structure and carrier behavior in TiN and NbN thin films.</li>
+                <li>Computed electron-phonon coupling (Wannier90 + EPW) to extract scattering rates and carrier lifetimes for mobility interpretation.</li>
+                <li>Modeled anisotropic carrier transport with Boltzmann transport formalisms; linked crystallographic orientation to transport and relaxation pathways.</li>
+                <li>Built automated Python post-processing pipelines for band/DOS analysis, EPC-derived lifetime statistics, and optical property visualization.</li>
+                <li>Executed production-scale simulations on HPC clusters (Slurm/PBS); optimized convergence strategy for reliable trends.</li>
+                <li>Initiated NEGF-based quantum transport simulations using NanoDCAL for 2D TMD transistor modeling and I-V characteristics.</li>
+            </ul>
+            <div class="cv-subtitle">M.Sc. Thesis - Strain-Induced Band Engineering in 2D Semiconductors (2019-2021)</div>
+            <div class="cv-note">Department of Physics, IIT Jodhpur</div>
+            <ul class="cv-list">
+                <li>Modeled strain-dependent bandgap and band alignment tuning in Janus WSSe monolayers using DFT.</li>
+                <li>Predicted photocatalytic activity changes by correlating electronic structure modulation with redox potential alignment.</li>
+            </ul>
+        </div>
+
+        <div class="cv-section">
+            <h2>Selected Projects</h2>
+            <ul class="cv-list">
+                <li>EPC-limited relaxation in TiN/NbN: quantified temperature-dependent scattering rates and lifetimes; analyzed anisotropy versus crystal orientation for thin-film transport interpretation.</li>
+                <li>3d TM-doped 2D PVSK: quantified optoelectronic property tuning via 3d transition-metal doping and identified a semiconductor-to-half-metal transition.</li>
+                <li>NEGF-based transistor modeling in 2D TMDs (NanoDCAL): initiated quantum transport workflow for nanoscale FET channels; analyzing transport signatures for device-relevant performance trends.</li>
+            </ul>
+        </div>
+
+        <div class="cv-section">
+            <h2>Technical Skills</h2>
+            <ul class="cv-list">
+                <li><strong>Methods:</strong> DFT, GW, Wannier interpolation, electron-phonon coupling, Boltzmann transport, NEGF quantum transport.</li>
+                <li><strong>Software:</strong> VASP, Quantum ESPRESSO, JDFTx, EPW, Wannier90, NanoDCAL.</li>
+                <li><strong>Programming:</strong> Python (NumPy, Pandas, Matplotlib), Bash, Git.</li>
+                <li><strong>HPC:</strong> Slurm/PBS job scripting, parallel computing, convergence optimization.</li>
+                <li><strong>Visualization:</strong> VESTA, XCrySDen.</li>
+            </ul>
+        </div>
+
+        <div class="cv-section">
+            <h2>Selected Research Impact</h2>
+            <ul class="cv-list">
+                <li>Quantified EPC-limited carrier lifetimes across temperature regimes for metallic thin films.</li>
+                <li>Identified orientation-dependent anisotropic scattering pathways in TiN thin films.</li>
+                <li>Demonstrated strain-induced bandgap modulation in 2D semiconductors for electronic property tuning.</li>
+                <li>Initiated NEGF-based quantum transport studies for 2D TMD transistor channels to bridge atomistic physics with device-relevant transport behavior.</li>
+            </ul>
+        </div>
+
+        <div class="cv-section">
+            <h2>Publications</h2>
+            <ul class="cv-list">
+                <li>P. Srivastva, B. Bazri, Y.-T. Hung, <strong>H. Verma</strong>, et al., <em>Nano Energy</em> 146 (2025) 111559. <a href="https://doi.org/10.1016/j.nanoen.2025.111559">DOI</a></li>
+                <li>L. T. Ngo, Y.-T. Huang, C.-C. Chang, <strong>H. Verma</strong>, et al., <em>Nano Energy</em> 142 (2025) 111230. <a href="https://doi.org/10.1016/j.nanoen.2025.111230">DOI</a></li>
+                <li>L. T. Ngo, W.-T. Huang, <strong>H. Verma</strong>, et al., <em>ACS Applied Materials & Interfaces</em> 16(48): 66262-66272 (2024). <a href="https://doi.org/10.1021/acsami.4c11438">DOI</a></li>
+                <li><strong>A. Thakran</strong>, A. Mohapatra, <strong>H. Verma</strong>, et al., <em>ACS Applied Energy Materials</em> 7(8): 3039-3048 (2024). <a href="https://doi.org/10.1021/acsaem.4c00490">DOI</a></li>
+                <li><strong>H. Verma</strong>, A. J. Kale, et al., <em>Journal of Electronic Materials</em> 50: 7230-7239 (2021). <a href="https://doi.org/10.1007/s11664-021-09038-x">DOI</a></li>
+            </ul>
+        </div>
+
+        <div class="cv-section">
+            <h2>Manuscripts Under Review / Submitted</h2>
+            <ul class="cv-list">
+                <li><strong>H. Verma</strong>, T.-Y. Peng, et al., Anisotropic hot carrier relaxation mediated by electron-phonon scattering in TiN thin films, under review in <em>Surfaces and Interfaces</em> (2026).</li>
+                <li><strong>H. Verma</strong>, S.-C. Huang, C.-C. Kaun*, Electronic and optical responses in BA<sub>2</sub>PbBr<sub>4</sub>: from semiconductor to half-metal via 3d transition-metal doping, submitted to <em>Materials Today Physics</em> (2026).</li>
+            </ul>
+        </div>
+
+        <div class="cv-section">
+            <h2>Honors and Awards</h2>
+            <ul class="cv-list">
+                <li>Best Paper Award, Center for Theoretical Physics, NTU (2025).</li>
+                <li>TIGP Fellowship (Academia Sinica) (2021-Present).</li>
+                <li>Rajiv Gandhi Academic Scholarship (Government of India) (2023).</li>
+                <li>INSPIRE Scholarship (Top 1% in HSC Board) (2016).</li>
+            </ul>
+        </div>
+
+        <div class="cv-section">
+            <h2>Summer Schools and Workshops</h2>
+            <ul class="cv-list">
+                <li>Oct 2025, H. Verma*, T.-Y. Peng, Y.-H. Chan, Y.-J. Lu, C.-C. Kaun, Orientation-Dependent Hot Carrier Relaxation in TiN Thin Films Facilitated by Electron-Phonon Scattering, The 26th Asian Workshop on First-Principles Electronic Structure Calculations (ASIAN-26), Japan. Financial support: NCTS.</li>
+                <li>Jan 2025, H. Verma*, T.-Y. Peng, Y.-H. Chan, Y.-J. Lu, C.-C. Kaun, Impact of Crystal Orientation on Hot Carrier Lifetimes in Titanium Nitride, Taiwan Physical Society Annual Meeting, Kaohsiung, Taiwan. Financial support: Academia Sinica.</li>
+                <li>2024, Summer School on First Principles Computational Materials - Advanced Level, National Tsing Hua University, Taiwan. Financial support: NCTS.</li>
+                <li>2024 (Aug 22-23), 22nd Workshop on First-Principles Computational Materials Physics, Tainan, Taiwan. Financial support: NCTS.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>(c) 2025 Hemant Verma. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #94a3b8;">Built with <i class="fas fa-heart" style="color: #06b6d4;"></i> for computational physics</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

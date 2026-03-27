@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SciPy for Physics - Python Tutorials | Hemant Verma</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tutorial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Hemant Verma</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../tutorials.html" class="active">Tutorials</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="tutorial-content">
+        <article>
+            <h1>SciPy for Physics Simulations</h1>
+            
+            <section class="tutorial-section">
+                <h2>Introduction to SciPy</h2>
+                <p>SciPy is a powerful library for scientific computing in Python, particularly useful for physics simulations and calculations.</p>
+                
+                <div class="code-example">
+                    <h3>Basic SciPy Usage</h3>
+                    <pre><code class="language-python">
+from scipy import constants
+from scipy import integrate
+import numpy as np
+
+# Physical constants
+print(f"Speed of light = {constants.c} m/s")
+print(f"Planck constant = {constants.h} Jâ‹…s")
+print(f"Electron mass = {constants.m_e} kg")
+                    </code></pre>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h2>Differential Equations in Physics</h2>
+                <p>SciPy's integrate module is perfect for solving differential equations commonly found in physics problems.</p>
+                
+                <div class="code-example">
+                    <h3>Simple Harmonic Motion</h3>
+                    <pre><code class="language-python">
+from scipy.integrate import odeint
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Define the system of first-order ODEs
+def harmonic_oscillator(state, t, omega0):
+    x, v = state
+    return [v, -omega0**2 * x]
+
+# Parameters
+omega0 = 2.0  # Natural frequency
+t = np.linspace(0, 10, 1000)
+initial_state = [1.0, 0.0]  # Initial position and velocity
+
+# Solve ODE
+solution = odeint(harmonic_oscillator, initial_state, t, args=(omega0,))
+
+# Plot results
+plt.plot(t, solution[:, 0])
+plt.xlabel('Time')
+plt.ylabel('Position')
+plt.title('Simple Harmonic Motion')
+plt.grid(True)
+                    </code></pre>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h2>Optimization Problems</h2>
+                <p>Learn how to use SciPy's optimization tools to solve physics problems.</p>
+                
+                <div class="code-example">
+                    <h3>Finding Potential Minimum</h3>
+                    <pre><code class="language-python">
+from scipy import optimize
+import numpy as np
+
+# Define potential energy function
+def potential(x, k, m, g):
+    return 0.5 * k * x**2 + m * g * x
+
+# Parameters
+k = 10.0  # Spring constant
+m = 1.0   # Mass
+g = 9.81  # Gravity
+
+# Find minimum
+result = optimize.minimize(potential, x0=0, args=(k, m, g))
+print(f"Equilibrium position: {result.x[0]:.3f} m")
+                    </code></pre>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h2>Practice Exercises</h2>
+                <div class="exercise">
+                    <h3>Exercise 1: Damped Oscillator</h3>
+                    <p>Modify the harmonic oscillator example to include damping. Plot the solution for different damping coefficients.</p>
+                </div>
+
+                <div class="exercise">
+                    <h3>Exercise 2: Coupled Oscillators</h3>
+                    <p>Simulate a system of two coupled oscillators using SciPy's ODE solver.</p>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h2>Additional Resources</h2>
+                <ul class="resources-list">
+                    <li><a href="https://docs.scipy.org/doc/scipy/tutorial/index.html">SciPy Official Tutorial</a></li>
+                    <li><a href="https://scipy-lectures.org/">SciPy Lecture Notes</a></li>
+                    <li><a href="https://docs.scipy.org/doc/scipy/reference/integrate.html">SciPy Integration Guide</a></li>
+                </ul>
+            </section>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Hemant Verma. All rights reserved.</p>
+            <p>Created with <i class="fas fa-heart"></i> using Python and SciPy</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
+</body>
+</html>

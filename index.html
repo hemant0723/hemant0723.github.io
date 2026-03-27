@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemant Verma | Computational Semiconductor Physics</title>
+    <meta name="description" content="Hemant Verma - Ph.D. candidate in computational semiconductor physics at National Taiwan University and Academia Sinica. DFT, EPC, NEGF, and TCAD-oriented transport modeling.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-logo">Hemant Verma</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Effects -->
+    <div class="page-background"></div>
+    <div class="gradient-mesh"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Hemant<span>.</span></a>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Writings</a></li>
+                <li><a href="#contact">Connect</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-avatar">
+                <img src="assets/profile.jpg" alt="Hemant Verma" onerror="this.parentElement.style.display='none'">
+            </div>
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1>Hemant <span class="gradient-text">Verma</span></h1>
+            <p class="hero-tagline">
+                Ph.D. candidate in computational semiconductor physics, translating first-principles results into device-ready models.
+            </p>
+            
+            <div class="hero-social">
+                <a href="https://github.com/hemant0723" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/hemantverma2001/" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://scholar.google.com/citations?user=gfbfpP8AAAAJ" class="social-link" title="Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="mailto:Verma0001@as.edu.tw" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            
+            <div class="hero-cta">
+                <a class="btn btn-primary btn-glow" href="#projects">View My Work</a>
+                <a class="btn btn-secondary" href="#about">About Me</a>
+            </div>
+        </div>
+        
+        <div class="scroll-hint" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+            <span>Explore</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="section-header reveal">
+            <span class="section-label">Get to know me</span>
+            <h2 class="section-title">About</h2>
+            <p class="section-subtitle">Computational physicist in Taipei focused on device-relevant materials modeling.</p>
+        </div>
+        
+        <div class="about-grid grid-2">
+            <div class="about-card card reveal">
+                <div class="about-icon"><i class="fas fa-atom"></i></div>
+                <h3 class="card-title">The Physics</h3>
+                <p class="card-text">I run DFT, Wannier90/EPW, and NEGF workflows to map electron-phonon interactions and hot-carrier behavior in emerging materials.</p>
+            </div>
+            
+            <div class="about-card card reveal">
+                <div class="about-icon"><i class="fas fa-code"></i></div>
+                <h3 class="card-title">The Code</h3>
+                <p class="card-text">Python-first automation for submission, post-processing, and visualization; I care about reproducible, readable tools.</p>
+            </div>
+            
+            <div class="about-card card reveal">
+                <div class="about-icon"><i class="fas fa-coffee"></i></div>
+                <h3 class="card-title">The Person</h3>
+                <p class="card-text">When I am not debugging a job script, I am usually on a Taiwan hike, shooting photos, or hunting for the next good coffee.</p>
+            </div>
+            
+            <div class="about-card card reveal">
+                <div class="about-icon"><i class="fas fa-rocket"></i></div>
+                <h3 class="card-title">The Mission</h3>
+                <p class="card-text">Bridge fundamental physics and real devices by shipping models that others can trust for performance predictions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="section-header reveal">
+            <span class="section-label">What I've built</span>
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">Research tools, simulations, and automation for semiconductor physics.</p>
+        </div>
+        
+        <div class="projects-grid grid-2">
+            <div class="project-card card reveal">
+                <div class="project-image">
+                    <div class="project-placeholder"><i class="fas fa-wave-square"></i></div>
+                </div>
+                <div class="project-content">
+                    <h3 class="card-title">Hot Carrier Simulator</h3>
+                    <p class="card-text">Automated EPW workflow that computes EPC lifetimes and summarizes scattering trends for semiconductor materials.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Quantum ESPRESSO</span>
+                        <span class="project-tag">EPW</span>
+                    </div>
+                    <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="project-card card reveal">
+                <div class="project-image">
+                    <div class="project-placeholder"><i class="fas fa-microchip"></i></div>
+                </div>
+                <div class="project-content">
+                    <h3 class="card-title">NEGF Transport Toolkit</h3>
+                    <p class="card-text">Analysis toolkit for NanoDCAL NEGF runs to extract I-V characteristics, transmission spectra, and channel benchmarking.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">NanoDCAL</span>
+                        <span class="project-tag">NumPy</span>
+                    </div>
+                    <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="project-card card reveal">
+                <div class="project-image">
+                    <div class="project-placeholder"><i class="fas fa-chart-line"></i></div>
+                </div>
+                <div class="project-content">
+                    <h3 class="card-title">DFT Data Pipeline</h3>
+                    <p class="card-text">High-throughput automation for structure relaxation, band-structure calculations, and publication-ready plotting.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Matplotlib</span>
+                        <span class="project-tag">HPC</span>
+                    </div>
+                    <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="project-card card reveal">
+                <div class="project-image">
+                    <div class="project-placeholder"><i class="fas fa-globe"></i></div>
+                </div>
+                <div class="project-content">
+                    <h3 class="card-title">Research Dashboard</h3>
+                    <p class="card-text">Web dashboard to monitor HPC jobs, capture logs, and visualize intermediate results without SSH hopping.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">Plotly</span>
+                        <span class="project-tag">Flask</span>
+                    </div>
+                    <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="section">
+        <div class="section-header reveal">
+            <span class="section-label">What I study</span>
+            <h2 class="section-title">Research</h2>
+            <p class="section-subtitle">Connecting atomistic simulations to transport, reliability, and device performance metrics.</p>
+        </div>
+        
+        <div class="research-grid grid-2">
+            <div class="research-card card reveal">
+                <div class="about-icon"><i class="fas fa-atom"></i></div>
+                <h3 class="card-title">First-Principles to TCAD</h3>
+                <p class="card-text">Band structure, DOS, and work-function alignment translated into device-ready parameters.</p>
+            </div>
+            
+            <div class="research-card card reveal">
+                <div class="about-icon"><i class="fas fa-wave-square"></i></div>
+                <h3 class="card-title">Electron-Phonon Coupling</h3>
+                <p class="card-text">Wannier90 + EPW pipelines for EPC matrix elements, scattering rates, and carrier lifetimes that capture anisotropic limits.</p>
+            </div>
+            
+            <div class="research-card card reveal">
+                <div class="about-icon"><i class="fas fa-microchip"></i></div>
+                <h3 class="card-title">Quantum Transport (NEGF)</h3>
+                <p class="card-text">NanoDCAL-based transmission spectra and I-V analysis for 2D TMD transistors to study scaling and quantum conductance.</p>
+            </div>
+            
+            <div class="research-card card reveal">
+                <div class="about-icon"><i class="fas fa-server"></i></div>
+                <h3 class="card-title">HPC & Automation</h3>
+                <p class="card-text">Python-driven pipelines for production DFT/EPC runs, convergence checks, and automated post-processing at scale.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications" class="section">
+        <div class="section-header reveal">
+            <span class="section-label">Published work</span>
+            <h2 class="section-title">Writings</h2>
+            <p class="section-subtitle">Selected peer-reviewed work and manuscripts in computational materials science.</p>
+        </div>
+        
+        <div class="publications-list">
+            <div class="pub-card card reveal">
+                <div class="pub-header">
+                    <h3 class="card-title">Interfacial Chemistry of Functionalized Ceramic Nanoparticles</h3>
+                    <span class="pub-journal">Nano Energy, 2025</span>
+                </div>
+                <p class="card-text">P. Srivastva, B. Bazri, Y.-T. Hung, <strong>H. Verma</strong>, et al.</p>
+                <div class="project-tags">
+                    <span class="project-tag">Interfaces</span>
+                    <span class="project-tag">Batteries</span>
+                </div>
+                <a href="https://doi.org/10.1016/j.nanoen.2025.111559" class="project-link" target="_blank">View Paper <i class="fas fa-external-link-alt"></i></a>
+            </div>
+            
+            <div class="pub-card card reveal">
+                <div class="pub-header">
+                    <h3 class="card-title">Solvent-Free Curable Perovskite Quantum Dot Inks</h3>
+                    <span class="pub-journal">Nano Energy, 2025</span>
+                </div>
+                <p class="card-text">L. T. Ngo, Y.-T. Huang, C.-C. Chang, <strong>H. Verma</strong>, et al.</p>
+                <div class="project-tags">
+                    <span class="project-tag">Perovskites</span>
+                    <span class="project-tag">Optoelectronics</span>
+                </div>
+                <a href="https://doi.org/10.1016/j.nanoen.2025.111230" class="project-link" target="_blank">View Paper <i class="fas fa-external-link-alt"></i></a>
+            </div>
+            
+            <div class="pub-card card reveal">
+                <div class="pub-header">
+                    <h3 class="card-title">Hybrid-Protected Perovskite Quantum Dot Films</h3>
+                    <span class="pub-journal">ACS AMI, 2024</span>
+                </div>
+                <p class="card-text">L. T. Ngo, W.-T. Huang, <strong>H. Verma</strong>, et al.</p>
+                <div class="project-tags">
+                    <span class="project-tag">Perovskites</span>
+                    <span class="project-tag">Stability</span>
+                </div>
+                <a href="https://doi.org/10.1021/acsami.4c11438" class="project-link" target="_blank">View Paper <i class="fas fa-external-link-alt"></i></a>
+            </div>
+            
+            <div class="pub-card card reveal">
+                <div class="pub-header">
+                    <h3 class="card-title">Cascaded Band Alignment for Heterostructure Solar Cells</h3>
+                    <span class="pub-journal">ACS AEM, 2024</span>
+                </div>
+                <p class="card-text">A. Thakran, A. Mohapatra, <strong>H. Verma</strong>, et al.</p>
+                <div class="project-tags">
+                    <span class="project-tag">Band alignment</span>
+                    <span class="project-tag">Solar cells</span>
+                </div>
+                <a href="https://doi.org/10.1021/acsaem.4c00490" class="project-link" target="_blank">View Paper <i class="fas fa-external-link-alt"></i></a>
+            </div>
+            
+            <div class="pub-card card reveal">
+                <div class="pub-header">
+                    <h3 class="card-title">Enhanced Photocatalytic Activity in Strain Engineered Janus WSSe</h3>
+                    <span class="pub-journal">JEM, 2021</span>
+                </div>
+                <p class="card-text"><strong>H. Verma</strong>, A. J. Kale, et al.</p>
+                <div class="project-tags">
+                    <span class="project-tag">2D materials</span>
+                    <span class="project-tag">Photocatalysis</span>
+                </div>
+                <a href="https://doi.org/10.1007/s11664-021-09038-x" class="project-link" target="_blank">View Paper <i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+        
+        <div class="section-footer reveal">
+            <p class="footer-note">Also exploring: anisotropic hot-carrier relaxation in TiN thin films; optical response tuning in BA<sub>2</sub>PbBr<sub>4</sub> with 3d TM doping.</p>
+            <a href="publications.html" class="btn btn-secondary">View All Publications</a>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="section-header reveal">
+            <span class="section-label">Let's chat</span>
+            <h2 class="section-title">Connect</h2>
+            <p class="section-subtitle">Open to collaborations, research chats, and new ideas.</p>
+        </div>
+        
+        <div class="connect-grid grid-2">
+            <div class="connect-card card reveal">
+                <div class="connect-icon"><i class="fas fa-envelope"></i></div>
+                <h3 class="card-title">Drop a line</h3>
+                <p class="card-text">For collaborations, questions, or just to say hi.</p>
+                <a href="mailto:Verma0001@as.edu.tw" class="connect-link">Verma0001@as.edu.tw</a>
+            </div>
+            
+            <div class="connect-card card reveal">
+                <div class="connect-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <h3 class="card-title">Find me</h3>
+                <p class="card-text">Research Center for Applied Sciences, Academia Sinica, Taipei, Taiwan.</p>
+            </div>
+            
+            <div class="connect-card card reveal">
+                <div class="connect-icon"><i class="fab fa-github"></i></div>
+                <h3 class="card-title">Code</h3>
+                <p class="card-text">Check out my tools and experiments.</p>
+                <a href="https://github.com/hemant0723" target="_blank" class="connect-link">github.com/hemant0723</a>
+            </div>
+            
+            <div class="connect-card card reveal">
+                <div class="connect-icon"><i class="fab fa-linkedin-in"></i></div>
+                <h3 class="card-title">Network</h3>
+                <p class="card-text">Let's connect professionally.</p>
+                <a href="https://www.linkedin.com/in/hemantverma2001/" target="_blank" class="connect-link">LinkedIn Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="#home" class="footer-logo">Hemant<span>.</span></a>
+                <p class="footer-tagline">Exploring physics through code.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#research">Research</a>
+                <a href="#publications">Writings</a>
+                <a href="#contact">Connect</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/hemant0723" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/hemantverma2001/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:Verma0001@as.edu.tw"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Designed and built by Hemant Verma (c) 2025</p>
+            <p>Made with curiosity, coffee, and code.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

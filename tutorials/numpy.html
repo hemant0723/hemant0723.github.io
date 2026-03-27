@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NumPy Essentials - Python Tutorials | Hemant Verma</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="../css/tutorial.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Hemant Verma</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../tutorials.html" class="active">Tutorials</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="tutorial-content">
+        <article>
+            <h1>NumPy Essentials for Scientific Computing</h1>
+            
+            <section class="tutorial-section">
+                <h2>Introduction to NumPy</h2>
+                <p>NumPy is the fundamental package for scientific computing in Python. It provides support for large, multi-dimensional arrays and matrices, along with a vast collection of high-level mathematical functions to operate on these arrays.</p>
+                
+                <div class="code-example">
+                    <h3>Basic Array Operations</h3>
+                    <pre><code class="language-python">
+import numpy as np
+
+# Creating arrays
+arr1 = np.array([1, 2, 3, 4, 5])
+arr2 = np.zeros((3, 3))
+arr3 = np.ones((2, 2))
+
+# Array operations
+result = arr1 * 2  # Element-wise multiplication
+print(result)  # [2 4 6 8 10]
+                    </code></pre>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h2>Array Manipulation</h2>
+                <p>NumPy provides various methods to manipulate arrays, including reshaping, concatenating, and splitting arrays.</p>
+                
+                <div class="code-example">
+                    <h3>Reshaping Arrays</h3>
+                    <pre><code class="language-python">
+# Create a 1D array
+arr = np.array([1, 2, 3, 4, 5, 6])
+
+# Reshape to 2x3 matrix
+matrix = arr.reshape(2, 3)
+print(matrix)
+# [[1 2 3]
+#  [4 5 6]]
+                    </code></pre>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h2>Linear Algebra Operations</h2>
+                <p>NumPy provides comprehensive tools for linear algebra operations, which are essential for physics computations.</p>
+                
+                <div class="code-example">
+                    <h3>Matrix Operations</h3>
+                    <pre><code class="language-python">
+# Create matrices
+A = np.array([[1, 2], [3, 4]])
+B = np.array([[5, 6], [7, 8]])
+
+# Matrix multiplication
+C = np.dot(A, B)
+print(C)
+
+# Eigenvalues and eigenvectors
+eigenvals, eigenvecs = np.linalg.eig(A)
+print("Eigenvalues:", eigenvals)
+                    </code></pre>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h2>Physics Example: Simple Harmonic Motion</h2>
+                <p>Let's use NumPy to simulate and visualize simple harmonic motion.</p>
+                
+                <div class="code-example">
+                    <h3>SHM Simulation</h3>
+                    <pre><code class="language-python">
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Parameters
+A = 1.0  # Amplitude
+omega = 2.0  # Angular frequency
+phi = 0.0  # Phase
+
+# Time points
+t = np.linspace(0, 10, 1000)
+
+# Position
+x = A * np.cos(omega * t + phi)
+
+# Plot
+plt.plot(t, x)
+plt.xlabel('Time')
+plt.ylabel('Position')
+plt.title('Simple Harmonic Motion')
+plt.grid(True)
+plt.show()
+                    </code></pre>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h2>Practice Exercises</h2>
+                <div class="exercise">
+                    <h3>Exercise 1: Array Operations</h3>
+                    <p>Create a 3x3 matrix of random numbers and calculate its:</p>
+                    <ul>
+                        <li>Determinant</li>
+                        <li>Inverse</li>
+                        <li>Transpose</li>
+                    </ul>
+                </div>
+
+                <div class="exercise">
+                    <h3>Exercise 2: Physics Application</h3>
+                    <p>Use NumPy to simulate the motion of a damped harmonic oscillator and plot its position vs. time.</p>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h2>Additional Resources</h2>
+                <ul class="resources-list">
+                    <li><a href="https://numpy.org/doc/stable/user/quickstart.html">NumPy Quick Start Guide</a></li>
+                    <li><a href="https://numpy.org/doc/stable/reference/">NumPy Reference Documentation</a></li>
+                    <li><a href="https://scipy-lectures.org/intro/numpy/index.html">SciPy Lectures on NumPy</a></li>
+                </ul>
+            </section>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Hemant Verma. All rights reserved.</p>
+            <p>Created with <i class="fas fa-heart"></i> using Python and NumPy</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural Networks for Scientific Computing - Python Tutorials | Hemant Verma</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tutorial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Hemant Verma</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../tutorials.html" class="active">Tutorials</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="tutorial-content">
+        <article>
+            <h1>Neural Networks for Scientific Computing</h1>
+            
+            <section class="tutorial-section">
+                <h2>Introduction to Neural Networks</h2>
+                <p>Neural networks are powerful tools for solving complex problems in scientific computing and physics.</p>
+                
+                <div class="code-example">
+                    <h3>Basic Neural Network Structure</h3>
+                    <pre><code class="language-python">
+import tensorflow as tf
+import numpy as np
+
+# Create a simple neural network
+def create_model():
+    model = tf.keras.Sequential([
+        tf.keras.layers.Dense(64, activation='relu', input_shape=(1,)),
+        tf.keras.layers.Dense(32, activation='relu'),
+        tf.keras.layers.Dense(1)
+    ])
+    
+    model.compile(optimizer='adam', loss='mse')
+    return model
+
+# Generate training data
+x = np.linspace(-5, 5, 1000)
+y = x**2 + np.random.normal(0, 0.1, 1000)
+
+# Train model
+model = create_model()
+model.fit(x, y, epochs=100, validation_split=0.2)
+                    </code></pre>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h2>Advanced Architectures</h2>
+                <p>Explore different neural network architectures for scientific applications.</p>
+                
+                <div class="code-example">
+                    <h3>Convolutional Neural Network</h3>
+                    <pre><code class="language-python">
+import tensorflow as tf
+
+# Create a CNN for image analysis
+def create_cnn_model():
+    model = tf.keras.Sequential([
+        tf.keras.layers.Conv2D(32, (3, 3), activation='relu', 
+                             input_shape=(64, 64, 1)),
+        tf.keras.layers.MaxPooling2D((2, 2)),
+        tf.keras.layers.Conv2D(64, (3, 3), activation='relu'),
+        tf.keras.layers.MaxPooling2D((2, 2)),
+        tf.keras.layers.Flatten(),
+        tf.keras.layers.Dense(64, activation='relu'),
+        tf.keras.layers.Dense(1)
+    ])
+    
+    model.compile(optimizer='adam', loss='mse')
+    return model
+
+# Generate 2D physics data (e.g., field distributions)
+def generate_field_data(n_samples=1000):
+    x = np.linspace(-5, 5, 64)
+    y = np.linspace(-5, 5, 64)
+    X, Y = np.meshgrid(x, y)
+    
+    # Example: Electric field from point charge
+    R = np.sqrt(X**2 + Y**2)
+    field = 1 / (R + 1e-6)
+    
+    return field.reshape(64, 64, 1)
+                    </code></pre>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h2>Custom Loss Functions</h2>
+                <p>Learn how to incorporate physical constraints into neural network training.</p>
+                
+                <div class="code-example">
+                    <h3>Physics-Constrained Loss</h3>
+                    <pre><code class="language-python">
+import tensorflow as tf
+
+class PhysicsModel(tf.keras.Model):
+    def __init__(self):
+        super(PhysicsModel, self).__init__()
+        self.dense1 = tf.keras.layers.Dense(64, activation='relu')
+        self.dense2 = tf.keras.layers.Dense(32, activation='relu')
+        self.dense3 = tf.keras.layers.Dense(1)
+        
+    def call(self, inputs):
+        x = self.dense1(inputs)
+        x = self.dense2(x)
+        return self.dense3(x)
+    
+    def physics_loss(self, y_true, y_pred):
+        # Example: Conservation of energy constraint
+        dy_dx = tf.gradients(y_pred, self.inputs)[0]
+        physics_constraint = tf.reduce_mean(tf.square(dy_dx + y_pred))
+        mse = tf.reduce_mean(tf.square(y_true - y_pred))
+        return mse + 0.1 * physics_constraint
+
+# Create and train model
+model = PhysicsModel()
+model.compile(optimizer='adam', loss=model.physics_loss)
+                    </code></pre>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h2>Practice Exercises</h2>
+                <div class="exercise">
+                    <h3>Exercise 1: PDE Solver</h3>
+                    <p>Build a neural network to solve the heat equation PDE.</p>
+                </div>
+
+                <div class="exercise">
+                    <h3>Exercise 2: System Identification</h3>
+                    <p>Use neural networks to identify the underlying physics of a dynamical system from data.</p>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h2>Additional Resources</h2>
+                <ul class="resources-list">
+                    <li><a href="https://www.tensorflow.org/tutorials/customization/custom_training">TensorFlow Custom Training</a></li>
+                    <li><a href="https://pytorch.org/tutorials/">PyTorch Tutorials</a></li>
+                    <li><a href="https://arxiv.org/abs/2003.04630">Neural Networks in Physics Research</a></li>
+                </ul>
+            </section>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Hemant Verma. All rights reserved.</p>
+            <p>Created with <i class="fas fa-heart"></i> using Python and Deep Learning</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
+</body>
+</html>

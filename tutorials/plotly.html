@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Plotting with Plotly - Python Tutorials | Hemant Verma</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tutorial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Hemant Verma</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../tutorials.html" class="active">Tutorials</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="tutorial-content">
+        <article>
+            <h1>Interactive Data Visualization with Plotly</h1>
+            
+            <section class="tutorial-section">
+                <h2>Introduction to Plotly</h2>
+                <p>Plotly is a powerful library for creating interactive visualizations in Python, perfect for web-based scientific presentations.</p>
+                
+                <div class="code-example">
+                    <h3>Basic Interactive Plot</h3>
+                    <pre><code class="language-python">
+import plotly.graph_objects as go
+import numpy as np
+
+# Generate data
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+# Create interactive plot
+fig = go.Figure()
+fig.add_trace(go.Scatter(x=x, y=y, mode='lines', name='sin(x)'))
+
+# Update layout
+fig.update_layout(
+    title='Interactive Sine Wave',
+    xaxis_title='x',
+    yaxis_title='sin(x)'
+)
+
+# Show plot
+fig.show()
+                    </code></pre>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h2>3D Visualization</h2>
+                <p>Create interactive 3D plots for complex physical systems.</p>
+                
+                <div class="code-example">
+                    <h3>3D Surface Plot</h3>
+                    <pre><code class="language-python">
+import plotly.graph_objects as go
+import numpy as np
+
+# Create 3D data
+x = np.linspace(-5, 5, 100)
+y = np.linspace(-5, 5, 100)
+X, Y = np.meshgrid(x, y)
+Z = np.sin(np.sqrt(X**2 + Y**2))
+
+# Create 3D surface plot
+fig = go.Figure(data=[go.Surface(z=Z, x=x, y=y)])
+
+# Update layout
+fig.update_layout(
+    title='3D Wave Function',
+    scene = dict(
+        xaxis_title='X',
+        yaxis_title='Y',
+        zaxis_title='Z'
+    )
+)
+
+fig.show()
+                    </code></pre>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h2>Interactive Dashboards</h2>
+                <p>Learn how to create interactive dashboards for data analysis.</p>
+                
+                <div class="code-example">
+                    <h3>Simple Dashboard</h3>
+                    <pre><code class="language-python">
+import plotly.express as px
+import pandas as pd
+import numpy as np
+
+# Create sample data
+np.random.seed(42)
+data = {
+    'Time': np.linspace(0, 10, 100),
+    'Temperature': 25 + np.random.normal(0, 1, 100),
+    'Pressure': 1 + 0.1 * np.sin(np.linspace(0, 10, 100))
+}
+df = pd.DataFrame(data)
+
+# Create interactive line plot
+fig = px.line(df, x='Time', y=['Temperature', 'Pressure'],
+              title='Temperature and Pressure vs Time')
+
+# Update layout
+fig.update_layout(
+    xaxis_title='Time (s)',
+    yaxis_title='Values',
+    hovermode='x unified'
+)
+
+fig.show()
+                    </code></pre>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h2>Practice Exercises</h2>
+                <div class="exercise">
+                    <h3>Exercise 1: Quantum States</h3>
+                    <p>Create an interactive 3D visualization of quantum harmonic oscillator wavefunctions.</p>
+                </div>
+
+                <div class="exercise">
+                    <h3>Exercise 2: Data Analysis</h3>
+                    <p>Build an interactive dashboard to analyze and visualize experimental data from a physics experiment.</p>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h2>Additional Resources</h2>
+                <ul class="resources-list">
+                    <li><a href="https://plotly.com/python/">Plotly Python Documentation</a></li>
+                    <li><a href="https://plotly.com/python/getting-started/">Plotly Getting Started Guide</a></li>
+                    <li><a href="https://plotly.com/python/scientific-charts/">Scientific Charts with Plotly</a></li>
+                </ul>
+            </section>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Hemant Verma. All rights reserved.</p>
+            <p>Created with <i class="fas fa-heart"></i> using Python and Plotly</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
+</body>
+</html>

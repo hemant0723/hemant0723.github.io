@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics & Machine Learning - Python Tutorials | Hemant Verma</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tutorial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Hemant Verma</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../tutorials.html" class="active">Tutorials</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="tutorial-content">
+        <article>
+            <h1>Machine Learning Applications in Physics</h1>
+            
+            <section class="tutorial-section">
+                <h2>Introduction to Physics & ML</h2>
+                <p>Machine Learning is revolutionizing physics research, from data analysis to theoretical predictions.</p>
+                
+                <div class="code-example">
+                    <h3>Basic ML Setup for Physics</h3>
+                    <pre><code class="language-python">
+import numpy as np
+import tensorflow as tf
+from sklearn.model_selection import train_test_split
+
+# Generate synthetic physics data
+def generate_physics_data(n_samples=1000):
+    # Simple harmonic motion with noise
+    t = np.linspace(0, 10, n_samples)
+    omega = 2.0
+    x = np.sin(omega * t)
+    x_noisy = x + np.random.normal(0, 0.1, n_samples)
+    return t.reshape(-1, 1), x_noisy.reshape(-1, 1)
+
+# Prepare data
+X, y = generate_physics_data()
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+                    </code></pre>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h2>Neural Networks for Physics</h2>
+                <p>Learn how to use neural networks to model physical systems.</p>
+                
+                <div class="code-example">
+                    <h3>Physics-Informed Neural Network</h3>
+                    <pre><code class="language-python">
+import tensorflow as tf
+
+# Create a simple physics-informed neural network
+def create_pinn_model():
+    model = tf.keras.Sequential([
+        tf.keras.layers.Dense(64, activation='tanh'),
+        tf.keras.layers.Dense(32, activation='tanh'),
+        tf.keras.layers.Dense(1)
+    ])
+    
+    model.compile(optimizer='adam', loss='mse')
+    return model
+
+# Custom physics-informed loss function
+def physics_loss(y_true, y_pred):
+    # Example: enforce conservation of energy
+    kinetic = tf.gradients(y_pred, t)[0]
+    potential = y_pred
+    total_energy = kinetic**2 + potential**2
+    return tf.reduce_mean(tf.square(total_energy - 1.0))
+
+# Train model
+model = create_pinn_model()
+model.fit(X_train, y_train, epochs=100, validation_split=0.2)
+                    </code></pre>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h2>Data Analysis in Physics</h2>
+                <p>Apply ML techniques to analyze experimental physics data.</p>
+                
+                <div class="code-example">
+                    <h3>Particle Classification</h3>
+                    <pre><code class="language-python">
+from sklearn.ensemble import RandomForestClassifier
+import numpy as np
+
+# Generate particle physics data
+def generate_particle_data(n_samples=1000):
+    # Features: energy, momentum, charge
+    energy = np.random.normal(100, 10, n_samples)
+    momentum = np.random.normal(90, 5, n_samples)
+    charge = np.random.choice([-1, 0, 1], n_samples)
+    
+    # Labels: particle type (0: electron, 1: muon, 2: pion)
+    labels = np.zeros(n_samples)
+    labels[energy > 105] = 1
+    labels[momentum > 95] = 2
+    
+    X = np.column_stack([energy, momentum, charge])
+    return X, labels
+
+# Train classifier
+X, y = generate_particle_data()
+clf = RandomForestClassifier(n_estimators=100)
+clf.fit(X, y)
+                    </code></pre>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h2>Practice Exercises</h2>
+                <div class="exercise">
+                    <h3>Exercise 1: Quantum State Prediction</h3>
+                    <p>Build a neural network to predict quantum states from measurement data.</p>
+                </div>
+
+                <div class="exercise">
+                    <h3>Exercise 2: Phase Transition Detection</h3>
+                    <p>Implement a machine learning model to detect phase transitions in a physical system.</p>
+                </div>
+            </section>
+
+            <section class="tutorial-section">
+                <h2>Additional Resources</h2>
+                <ul class="resources-list">
+                    <li><a href="https://www.tensorflow.org/tutorials">TensorFlow Tutorials</a></li>
+                    <li><a href="https://scikit-learn.org/stable/tutorial/index.html">Scikit-learn Tutorials</a></li>
+                    <li><a href="https://arxiv.org/abs/2006.14115">Physics-Informed ML Paper</a></li>
+                </ul>
+            </section>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Hemant Verma. All rights reserved.</p>
+            <p>Created with <i class="fas fa-heart"></i> using Python and TensorFlow</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
+</body>
+</html>
