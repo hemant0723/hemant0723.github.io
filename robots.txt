@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hemant0723.github.io/academic-website/sitemap.xml

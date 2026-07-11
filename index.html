@@ -3,407 +3,764 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hemant Verma - Physics PhD Candidate at NTU Taiwan specializing in condensed matter physics">
-    <title>Hemant Verma - Physics PhD Candidate at NTU Taiwan</title>
+    <meta name="description" content="Hemant Verma — Ph.D. candidate in Computational Semiconductor Physics at National Taiwan University & Academia Sinica. First-principles DFT, electron-phonon coupling, and NEGF quantum transport for 2D semiconductor devices.">
+    <meta name="keywords" content="Hemant Verma, computational physics, semiconductor, DFT, electron-phonon coupling, NEGF, quantum transport, 2D materials, TMD, TCAD, VASP, Quantum ESPRESSO, NanoDCAL, NTU, Academia Sinica">
+    <meta name="author" content="Hemant Verma">
+    <link rel="canonical" href="https://hemant0723.github.io/academic-website/">
+    <meta name="theme-color" content="#4f46e5">
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hemant Verma — Computational Semiconductor Physics">
+    <meta property="og:description" content="Ph.D. candidate working on first-principles simulations and quantum transport for next-generation semiconductor devices.">
+    <meta property="og:url" content="https://hemant0723.github.io/academic-website/">
+    <meta property="og:image" content="https://hemant0723.github.io/academic-website/assets/images/physics-bg.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hemant Verma — Computational Semiconductor Physics">
+    <meta name="twitter:description" content="First-principles DFT, electron-phonon coupling, and NEGF quantum transport for 2D semiconductor devices.">
+    <meta name="twitter:image" content="https://hemant0723.github.io/academic-website/assets/images/physics-bg.jpg">
+
+    <title>Hemant Verma — Computational Semiconductor Physics | NTU & Academia Sinica</title>
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%234f46e5'/><text x='50%25' y='54%25' font-family='Arial,sans-serif' font-size='30' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='middle'>HV</text></svg>">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Apply saved theme before paint to avoid flash -->
+    <script>(function(){try{var t=localStorage.getItem('hv-theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+
+    <!-- Structured data for search engines / Google Scholar -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://hemant0723.github.io/academic-website/#person",
+          "name": "Hemant Verma",
+          "url": "https://hemant0723.github.io/academic-website/",
+          "image": "https://hemant0723.github.io/academic-website/assets/photos/profile.jpg",
+          "jobTitle": "Ph.D. Candidate, Computational Semiconductor Physics",
+          "email": "mailto:verma.12@alumni.iitj.ac.in",
+          "affiliation": [
+            { "@type": "Organization", "name": "National Taiwan University" },
+            { "@type": "Organization", "name": "Academia Sinica" }
+          ],
+          "alumniOf": [
+            { "@type": "CollegeOrUniversity", "name": "Indian Institute of Technology Jodhpur" },
+            { "@type": "CollegeOrUniversity", "name": "University of Rajasthan" }
+          ],
+          "knowsAbout": ["Density Functional Theory", "Electron-Phonon Coupling", "Quantum Transport", "NEGF", "2D Semiconductors", "TCAD", "Computational Materials Science"],
+          "sameAs": [
+            "https://scholar.google.com/citations?user=gfbfpP8AAAAJ&hl=en",
+            "https://orcid.org/0000-0003-0147-2336",
+            "https://www.researchgate.net/profile/Hemant-Verma",
+            "https://github.com/hemant0723",
+            "https://www.linkedin.com/in/hemantverma2001/"
+          ]
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "headline": "Probing Interfacial Chemistry of Functionalized Ceramic Nanoparticles to Optimize Li+ Pathways in Polymer Electrolytes for Solid-State Lithium Metal Batteries",
+          "author": { "@id": "https://hemant0723.github.io/academic-website/#person" },
+          "datePublished": "2025",
+          "isPartOf": { "@type": "Periodical", "name": "Nano Energy" },
+          "url": "https://doi.org/10.1016/j.nanoen.2025.111559"
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "headline": "High-Efficiency and Ultrastable Solvent-Free Curable Perovskite Quantum Dot Inks for MicroLED and LED Backlighting Applications",
+          "author": { "@id": "https://hemant0723.github.io/academic-website/#person" },
+          "datePublished": "2025",
+          "isPartOf": { "@type": "Periodical", "name": "Nano Energy" },
+          "url": "https://doi.org/10.1016/j.nanoen.2025.111230"
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "headline": "Design and Simulation of Perovskite Solar Cells: A Numerical Approach Towards Device Structure Optimization",
+          "author": { "@id": "https://hemant0723.github.io/academic-website/#person" },
+          "datePublished": "2025",
+          "isPartOf": { "@type": "Book", "name": "National Conference on Climate Resilience and Environmentally Sustainable Technologies" },
+          "url": "https://link.springer.com/chapter/10.1007/978-981-95-3218-6_11"
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "headline": "Hybrid-Protected Perovskite Quantum Dot Films with Ultra-High Efficiency and Stability for LED Backlighting",
+          "author": { "@id": "https://hemant0723.github.io/academic-website/#person" },
+          "datePublished": "2024",
+          "isPartOf": { "@type": "Periodical", "name": "ACS Applied Materials & Interfaces" },
+          "url": "https://doi.org/10.1021/acsami.4c15012"
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "headline": "Cascaded-Type Band Alignment of a WBG Perovskite/NBG Perovskite for Heterostructure Solar Cells",
+          "author": { "@id": "https://hemant0723.github.io/academic-website/#person" },
+          "datePublished": "2024",
+          "isPartOf": { "@type": "Periodical", "name": "ACS Applied Energy Materials" },
+          "url": "https://doi.org/10.1021/acsaem.3c02258"
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "headline": "Enhanced Photocatalytic Activity in Strain Engineered Janus WSSe Monolayers",
+          "author": { "@id": "https://hemant0723.github.io/academic-website/#person" },
+          "datePublished": "2021",
+          "isPartOf": { "@type": "Periodical", "name": "Journal of Electronic Materials" },
+          "url": "https://doi.org/10.1007/s11664-021-09215-w"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Hemant Verma</div>
-            <div class="menu-toggle">☰</div>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#teaching">Teaching</a></li>
-                <li><a href="#cv">CV</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#tutorials">Tutorials</a></li>
-            </ul>
+            <a href="#home" class="logo">Hemant Verma</a>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#software">Software</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#cv">CV</a></li>
+                    <li><a href="#tutorials">Tutorials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+                <button class="menu-toggle" aria-label="Open menu">☰</button>
+            </div>
         </nav>
     </header>
 
+    <!-- ===================== HERO ===================== -->
     <section id="home" class="hero">
+        <canvas class="hero-canvas" aria-hidden="true"></canvas>
         <div class="hero-content">
+            <span class="hero-badge"><span class="dot"></span> Open to research &amp; industry collaborations</span>
             <h1>Hemant Verma</h1>
-            <h2>Physics PhD Candidate at NTU Taiwan</h2>
-            <p>Exploring the frontiers of condensed matter physics and quantum materials through computational and experimental approaches</p>
+            <p class="hero-role"><span id="role-text">Computational Semiconductor Physics</span><span class="type-cursor">&nbsp;</span></p>
+            <p class="hero-affil">National Taiwan University &middot; Academia Sinica &middot; IIT Jodhpur</p>
+            <p class="hero-tagline">First-principles simulations and quantum transport for next-generation semiconductor devices — DFT electronic structure, electron–phonon coupling, and NEGF modeling of 2D TMD transistors.</p>
+            <div class="hero-cta">
+                <a href="#publications" class="btn btn-primary"><i class="fas fa-book-open"></i> View Publications</a>
+                <a href="#contact" class="btn btn-ghost"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+            </div>
             <div class="social-links">
-                <a href="https://github.com/hemant0723" class="social-icon" title="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/hemantverma2001/" class="social-icon" title="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://www.researchgate.net/profile/Hemant-Verma?ev=hdr_xprf" class="social-icon" title="ResearchGate">
-                    <i class="fab fa-researchgate"></i>
-                </a>
-                <a href="https://scholar.google.com/citations?user=gfbfpP8AAAAJ&hl=en" class="social-icon" title="Google Scholar">
-                    <i class="fas fa-graduation-cap"></i>
-                </a>
-                <a href="https://www.instagram.com/its_hemant.verma/" class="social-icon" title="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.facebook.com/people/Hemant-Verma/100012317498324/" class="social-icon" title="Facebook">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://orcid.org/0000-0003-0147-2336" class="social-icon" title="ORCID">
-                    <i class="fab fa-orcid"></i>
-                </a>
-                <a href="mailto:verma.12@alumni.iitj.ac.in" class="social-icon" title="Email">
+                <a href="https://scholar.google.com/citations?user=gfbfpP8AAAAJ&hl=en" class="social-icon" title="Google Scholar" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i></a>
+                <a href="https://orcid.org/0000-0003-0147-2336" class="social-icon" title="ORCID" target="_blank" rel="noopener"><i class="fab fa-orcid"></i></a>
+                <a href="https://www.researchgate.net/profile/Hemant-Verma?ev=hdr_xprf" class="social-icon" title="ResearchGate" target="_blank" rel="noopener"><i class="fab fa-researchgate"></i></a>
+                <a href="https://github.com/hemant0723" class="social-icon" title="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/hemantverma2001/" class="social-icon" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:verma.12@alumni.iitj.ac.in" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== STATS ===================== -->
+    <div id="stats" class="stats">
+        <div class="stat reveal"><div class="num" data-count="6">6</div><div class="label">Peer-reviewed papers</div></div>
+        <div class="stat reveal" data-delay="1"><div class="num" data-count="2">2</div><div class="label">Manuscripts under review</div></div>
+        <div class="stat reveal" data-delay="2"><div class="num" data-count="2">2</div><div class="label">Conference presentations</div></div>
+        <div class="stat reveal" data-delay="3"><div class="num" data-count="5" data-suffix="+">5+</div><div class="label">Years of research</div></div>
+    </div>
+
+    <!-- ===================== TECH MARQUEE ===================== -->
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <div class="marquee-group">
+                <span>First-Principles DFT</span><span>VASP</span><span>Quantum ESPRESSO</span><span>JDFTx</span><span>Wannier90</span><span>EPW</span><span>NanoDCAL</span><span>NEGF</span><span>Boltzmann Transport</span><span>Python</span><span>Slurm / PBS</span><span>VESTA</span>
+            </div>
+            <div class="marquee-group">
+                <span>First-Principles DFT</span><span>VASP</span><span>Quantum ESPRESSO</span><span>JDFTx</span><span>Wannier90</span><span>EPW</span><span>NanoDCAL</span><span>NEGF</span><span>Boltzmann Transport</span><span>Python</span><span>Slurm / PBS</span><span>VESTA</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== NEWS ===================== -->
+    <section id="news" class="block">
+        <div class="block-inner">
+            <div class="section-head reveal">
+                <span class="eyebrow">Latest</span>
+                <h2>News &amp; Highlights</h2>
+                <p>Recent publications, awards, and conference activity.</p>
+            </div>
+            <div class="news-list">
+                <div class="news-item reveal"><span class="news-date">2026</span><p>Two manuscripts under review/submitted: anisotropic hot-carrier relaxation in TiN thin films (<em>Surfaces and Interfaces</em>) and semiconductor-to-half-metal tuning in BA<sub>2</sub>PbBr<sub>4</sub> (<em>Materials Today Physics</em>).</p></div>
+                <div class="news-item reveal"><span class="news-date">Oct 2025</span><p>Presented poster <strong>P-196</strong> at the 26th Asian Workshop on First-Principles Electronic Structure Calculations (ASIAN-26), Tsukuba, Japan.</p></div>
+                <div class="news-item reveal"><span class="news-date">2025</span><p>Received the <strong>Best Paper Award</strong> from the Center for Theoretical Physics, National Taiwan University.</p></div>
+                <div class="news-item reveal"><span class="news-date">2025</span><p>Two papers published in <em>Nano Energy</em> on perovskite quantum-dot inks and Li<sup>+</sup> transport in solid-state battery electrolytes.</p></div>
+                <div class="news-item reveal"><span class="news-date">Jan 2025</span><p>Presented at the <strong>Taiwan Physical Society Annual Meeting</strong>, National Sun Yat-sen University, Kaohsiung.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== RESEARCH ===================== -->
+    <section id="research" class="block bg-alt">
+        <div class="block-inner">
+            <div class="section-head reveal">
+                <span class="eyebrow">What I work on</span>
+                <h2>Research Interests</h2>
+                <p>Bridging atomistic first-principles physics with device-relevant transport behavior.</p>
+            </div>
+            <div class="research-grid">
+                <div class="research-item reveal">
+                    <div class="research-icon"><i class="fas fa-microchip"></i></div>
+                    <h3>TCAD-Oriented Device Physics</h3>
+                    <p>Linking atomistic, first-principles properties to device-level metrics.</p>
+                    <p class="highlight">Focus: transport, carrier lifetime, and mobility trends for device modeling</p>
+                </div>
+                <div class="research-item reveal" data-delay="1">
+                    <div class="research-icon"><i class="fas fa-wave-square"></i></div>
+                    <h3>Quantum Transport for Nanoscale FETs</h3>
+                    <p>NEGF-based modeling of nanoscale transistor channels and scaling behavior.</p>
+                    <p class="highlight">Tools: NanoDCAL — I–V characteristics and transmission spectra</p>
+                </div>
+                <div class="research-item reveal" data-delay="2">
+                    <div class="research-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3>2D Semiconductors (TMDs)</h3>
+                    <p>Channel physics, band alignment, and transport-limiting mechanisms.</p>
+                    <p class="highlight">Application: next-generation 2D TMD transistors</p>
+                </div>
+                <div class="research-item reveal" data-delay="3">
+                    <div class="research-icon"><i class="fas fa-atom"></i></div>
+                    <h3>Electronic Structure &amp; Electron–Phonon Coupling</h3>
+                    <p>DFT electronic structure with EPC-driven scattering rates and lifetimes.</p>
+                    <p class="highlight">Methods: VASP, Quantum ESPRESSO, JDFTx, Wannier90 + EPW</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SOFTWARE ===================== -->
+    <section id="software" class="block">
+        <div class="block-inner">
+            <div class="section-head reveal">
+                <span class="eyebrow">Open source</span>
+                <h2>Software &amp; Tools</h2>
+                <p>Research software I build and maintain.</p>
+            </div>
+            <div class="software-grid">
+                <article class="software-card reveal">
+                    <div class="software-head">
+                        <div class="software-icon"><i class="fas fa-chart-line"></i></div>
+                        <div>
+                            <h3>SolarXPlot</h3>
+                            <p class="software-sub">Solar-cell data analysis &amp; plotting</p>
+                        </div>
+                    </div>
+                    <p>An open-source tool that lets non-coding experimentalists analyze and visualize solar-cell measurement data without writing code — built for fast, reproducible figures.</p>
+                    <div class="tutorial-tags">
+                        <span class="tag">Open Source</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Solar Cells</span>
+                        <span class="tag">Data Viz</span>
+                    </div>
+                    <div class="software-links">
+                        <a href="https://solarxplot.github.io/SolarXPlotv1/" target="_blank" rel="noopener" class="btn btn-primary"><i class="fas fa-arrow-up-right-from-square"></i> Launch App</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PUBLICATIONS ===================== -->
+    <section id="publications" class="block bg-alt">
+        <div class="block-inner">
+            <div class="section-head reveal">
+                <span class="eyebrow">Selected work</span>
+                <h2>Publications</h2>
+                <p>Peer-reviewed articles and manuscripts in progress. Filter by year below.</p>
+            </div>
+
+            <div class="pub-filter reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="2025">2025</button>
+                <button class="filter-btn" data-filter="2024">2024</button>
+                <button class="filter-btn" data-filter="2021">2021</button>
+                <button class="filter-btn" data-filter="review">Under Review</button>
+            </div>
+
+            <!-- 2025 -->
+            <div class="pub-year-group" data-year="2025">
+                <h3 class="year-heading">2025</h3>
+                <div class="publications-grid">
+                    <div class="publication-item reveal">
+                        <p class="pub-number">6.</p>
+                        <p class="pub-title">Probing Interfacial Chemistry of Functionalized Ceramic Nanoparticles to Optimize Li<sup>+</sup> Pathways in Polymer Electrolytes for Solid-State Lithium Metal Batteries</p>
+                        <p class="authors">P. Srivastva, B. Bazri, Y.-T. Hung, <strong>Hemant Verma</strong>, et al.</p>
+                        <p class="journal"><em>Nano Energy</em> <strong>2025</strong>, <em>146</em>, 111559. <a href="https://doi.org/10.1016/j.nanoen.2025.111559" target="_blank" rel="noopener">DOI ↗</a></p>
+                        <div class="pub-actions"><button class="cite-btn" type="button"><i class="fas fa-quote-right"></i> BibTeX</button></div>
+                        <pre class="bibtex" hidden>@article{srivastva2025probing,
+  title   = {Probing Interfacial Chemistry of Functionalized Ceramic Nanoparticles to Optimize Li+ Pathways in Polymer Electrolytes for Solid-State Lithium Metal Batteries},
+  author  = {Srivastva, P. and Bazri, B. and Hung, Y.-T. and Verma, Hemant and others},
+  journal = {Nano Energy},
+  volume  = {146},
+  pages   = {111559},
+  year    = {2025},
+  doi     = {10.1016/j.nanoen.2025.111559}
+}</pre>
+                    </div>
+                    <div class="publication-item reveal">
+                        <p class="pub-number">5.</p>
+                        <p class="pub-title">High-Efficiency and Ultrastable Solvent-Free Curable Perovskite Quantum Dot Inks for MicroLED and LED Backlighting Applications</p>
+                        <p class="authors">L. T. Ngo, Y.-T. Huang, C.-C. Chang, <strong>Hemant Verma</strong>, et al.</p>
+                        <p class="journal"><em>Nano Energy</em> <strong>2025</strong>, <em>142</em>, 111230. <a href="https://doi.org/10.1016/j.nanoen.2025.111230" target="_blank" rel="noopener">DOI ↗</a></p>
+                        <div class="pub-actions"><button class="cite-btn" type="button"><i class="fas fa-quote-right"></i> BibTeX</button></div>
+                        <pre class="bibtex" hidden>@article{ngo2025high,
+  title   = {High-Efficiency and Ultrastable Solvent-Free Curable Perovskite Quantum Dot Inks for MicroLED and LED Backlighting Applications},
+  author  = {Ngo, L. T. and Huang, Y.-T. and Chang, C.-C. and Verma, Hemant and others},
+  journal = {Nano Energy},
+  volume  = {142},
+  pages   = {111230},
+  year    = {2025},
+  doi     = {10.1016/j.nanoen.2025.111230}
+}</pre>
+                    </div>
+                    <div class="publication-item reveal">
+                        <p class="pub-number">4.</p>
+                        <p class="pub-title">Design and Simulation of Perovskite Solar Cells: A Numerical Approach Towards Device Structure Optimization</p>
+                        <p class="authors">C. Guru Santosh, <strong>Hemant Verma</strong>, S. S. Singh, T. G. Kanakadas, S. B. Lekshmi, A. Mohapatra, M. L. Meena</p>
+                        <p class="journal">In <em>National Conference on Climate Resilience and Environmentally Sustainable Technologies</em> <strong>2025</strong>, 133–142. <a href="https://link.springer.com/chapter/10.1007/978-981-95-3218-6_11" target="_blank" rel="noopener">Link ↗</a></p>
+                        <div class="pub-actions"><button class="cite-btn" type="button"><i class="fas fa-quote-right"></i> BibTeX</button></div>
+                        <pre class="bibtex" hidden>@incollection{santosh2025design,
+  title     = {Design and Simulation of Perovskite Solar Cells: A Numerical Approach Towards Device Structure Optimization},
+  author    = {Guru Santosh, C. and Verma, Hemant and Singh, S. S. and Kanakadas, T. G. and Lekshmi, S. B. and Mohapatra, A. and Meena, M. L.},
+  booktitle = {National Conference on Climate Resilience and Environmentally Sustainable Technologies},
+  pages     = {133--142},
+  year      = {2025},
+  doi       = {10.1007/978-981-95-3218-6_11}
+}</pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2024 -->
+            <div class="pub-year-group" data-year="2024">
+                <h3 class="year-heading">2024</h3>
+                <div class="publications-grid">
+                    <div class="publication-item reveal">
+                        <p class="pub-number">3.</p>
+                        <p class="pub-title">Hybrid-Protected Perovskite Quantum Dot Films with Ultra-High Efficiency and Stability for LED Backlighting</p>
+                        <p class="authors">Loan Thi Ngo, Wen-Tse Huang, <strong>Hemant Verma</strong>, Yen-Huei Lin, Ling-Wei Liang, Chia-Te Fang, Jia-Cheng Chang, Wen-Chung Chu, Chaochin Su*, Chao-Cheng Kaun*, and Ru-Shi Liu*</p>
+                        <p class="journal"><em>ACS Applied Materials &amp; Interfaces</em> <strong>2024</strong>, <em>16</em> (48), 66262–66272. <a href="https://doi.org/10.1021/acsami.4c15012" target="_blank" rel="noopener">DOI ↗</a></p>
+                        <div class="pub-actions"><button class="cite-btn" type="button"><i class="fas fa-quote-right"></i> BibTeX</button></div>
+                        <pre class="bibtex" hidden>@article{ngo2024hybrid,
+  title   = {Hybrid-Protected Perovskite Quantum Dot Films with Ultra-High Efficiency and Stability for LED Backlighting},
+  author  = {Ngo, Loan Thi and Huang, Wen-Tse and Verma, Hemant and Lin, Yen-Huei and Liang, Ling-Wei and Fang, Chia-Te and Chang, Jia-Cheng and Chu, Wen-Chung and Su, Chaochin and Kaun, Chao-Cheng and Liu, Ru-Shi},
+  journal = {ACS Applied Materials \&amp; Interfaces},
+  volume  = {16},
+  number  = {48},
+  pages   = {66262--66272},
+  year    = {2024},
+  doi     = {10.1021/acsami.4c15012}
+}</pre>
+                    </div>
+                    <div class="publication-item reveal">
+                        <p class="pub-number">2.</p>
+                        <p class="pub-title">Cascaded-Type Band Alignment of a WBG Perovskite/NBG Perovskite for Heterostructure Solar Cells</p>
+                        <p class="authors">Anjali Thakran, Anisha Mohapatra, <strong>Hemant Verma</strong>, Mario Hofmann, Zeeshan Alam Ansari, Chintam Hanmandlu, Chung Hsin Lu, and Chih Wei Chu*</p>
+                        <p class="journal"><em>ACS Applied Energy Materials</em> <strong>2024</strong>, <em>7</em> (8), 3039–3048. <a href="https://doi.org/10.1021/acsaem.3c02258" target="_blank" rel="noopener">DOI ↗</a></p>
+                        <div class="pub-actions"><button class="cite-btn" type="button"><i class="fas fa-quote-right"></i> BibTeX</button></div>
+                        <pre class="bibtex" hidden>@article{thakran2024cascaded,
+  title   = {Cascaded-Type Band Alignment of a WBG Perovskite/NBG Perovskite for Heterostructure Solar Cells},
+  author  = {Thakran, Anjali and Mohapatra, Anisha and Verma, Hemant and Hofmann, Mario and Ansari, Zeeshan Alam and Hanmandlu, Chintam and Lu, Chung Hsin and Chu, Chih Wei},
+  journal = {ACS Applied Energy Materials},
+  volume  = {7},
+  number  = {8},
+  pages   = {3039--3048},
+  year    = {2024},
+  doi     = {10.1021/acsaem.3c02258}
+}</pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2021 -->
+            <div class="pub-year-group" data-year="2021">
+                <h3 class="year-heading">2021</h3>
+                <div class="publications-grid">
+                    <div class="publication-item reveal">
+                        <p class="pub-number">1.</p>
+                        <p class="pub-title">Enhanced Photocatalytic Activity in Strain Engineered Janus WSSe Monolayers</p>
+                        <p class="authors"><strong>Hemant Verma</strong>, Abhijeet J. Kale, Chandra Prakash, Moussab Harb, Ambesh Dixit*</p>
+                        <p class="journal"><em>Journal of Electronic Materials</em> <strong>2021</strong>, <em>50</em>, 7230–7239. <a href="https://doi.org/10.1007/s11664-021-09215-w" target="_blank" rel="noopener">DOI ↗</a></p>
+                        <div class="pub-actions"><button class="cite-btn" type="button"><i class="fas fa-quote-right"></i> BibTeX</button></div>
+                        <pre class="bibtex" hidden>@article{verma2021enhanced,
+  title   = {Enhanced Photocatalytic Activity in Strain Engineered Janus WSSe Monolayers},
+  author  = {Verma, Hemant and Kale, Abhijeet J. and Prakash, Chandra and Harb, Moussab and Dixit, Ambesh},
+  journal = {Journal of Electronic Materials},
+  volume  = {50},
+  pages   = {7230--7239},
+  year    = {2021},
+  doi     = {10.1007/s11664-021-09215-w}
+}</pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Under Review -->
+            <div class="pub-year-group" data-year="review">
+                <h3 class="year-heading">Manuscripts Under Review / Submitted</h3>
+                <div class="publications-grid">
+                    <div class="publication-item pub-status reveal">
+                        <p class="pub-title">Anisotropic Hot Carrier Relaxation Mediated by Electron–Phonon Scattering in TiN Thin Films</p>
+                        <p class="authors"><strong>Hemant Verma</strong>, T.-Y. Peng, et al.</p>
+                        <p class="journal">Under review in <em>Surfaces and Interfaces</em> (2026).</p>
+                    </div>
+                    <div class="publication-item pub-status reveal">
+                        <p class="pub-title">Electronic and Optical Responses in BA<sub>2</sub>PbBr<sub>4</sub>: From Semiconductor to Half-Metal via 3d Transition-Metal Doping</p>
+                        <p class="authors"><strong>Hemant Verma</strong>, S.-C. Huang, C.-C. Kaun*</p>
+                        <p class="journal">Submitted to <em>Materials Today Physics</em> (2026).</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="footnote">* Corresponding author</p>
+        </div>
+    </section>
+
+    <!-- ===================== CV ===================== -->
+    <section id="cv" class="block">
+        <div class="block-inner">
+            <div class="section-head reveal">
+                <span class="eyebrow">Background</span>
+                <h2>Curriculum Vitae</h2>
+                <p>Education, research experience, skills, and recognitions.</p>
+            </div>
+            <div class="cv-content">
+                <div class="cv-header reveal">
+                    <div class="cv-photo">
+                        <img src="assets/photos/profile.jpg" alt="Hemant Verma" class="profile-image" onerror="this.closest('.cv-photo').style.display='none'">
+                    </div>
+                    <div class="cv-info">
+                        <p>Hemant Verma</p>
+                        <p>Ph.D. Candidate, Computational Semiconductor Physics</p>
+                        <p><i class="fas fa-envelope"></i> verma.12@alumni.iitj.ac.in</p>
+                        <p><i class="fas fa-phone"></i> (+886) 908 363 245</p>
+                    </div>
+                </div>
+
+                <div class="cv-section reveal">
+                    <h3><i class="fas fa-user"></i> Professional Summary</h3>
+                    <div class="cv-item no-marker">
+                        <p>Computational semiconductor physicist focused on <strong>first-principles simulations and transport physics</strong> for <strong>TCAD</strong> applications, with academic training from <strong>IIT Jodhpur (M.Sc. Physics)</strong> and <strong>National Taiwan University (Ph.D. Physics), Taiwan</strong>. Experienced in <strong>DFT-based electronic structure</strong>, <strong>EPC-driven lifetimes</strong>, and translating atomistic results into device-relevant parameters (mobility trends, relaxation, band alignment). Skilled in <strong>HPC simulations</strong> and <strong>Python automation</strong>. Currently developing <strong>NEGF (NanoDCAL)</strong> quantum transport workflows for <strong>2D TMD transistor</strong> I–V and transmission analysis.</p>
+                    </div>
+                </div>
+
+                <div class="cv-section reveal">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="cv-item">
+                        <p class="cv-title">Ph.D. in Physics</p>
+                        <p class="cv-place">National Taiwan University, Taiwan</p>
+                        <p class="cv-subtitle">Taiwan International Graduate Program (TIGP) – Computational Materials Science · CGPA: 3.94/4.3</p>
+                        <p class="cv-date">2021–Present</p>
+                    </div>
+                    <div class="cv-item">
+                        <p class="cv-title">M.Sc. in Physics</p>
+                        <p class="cv-place">Indian Institute of Technology (IIT) Jodhpur, India</p>
+                        <p class="cv-subtitle">CGPA: 8.19/10</p>
+                        <p class="cv-date">2019–2021</p>
+                    </div>
+                    <div class="cv-item">
+                        <p class="cv-title">B.Sc. in PCM</p>
+                        <p class="cv-place">University of Rajasthan, India</p>
+                        <p class="cv-date">2016–2019</p>
+                    </div>
+                </div>
+
+                <div class="cv-section reveal">
+                    <h3><i class="fas fa-flask"></i> Research Experience</h3>
+                    <div class="cv-item">
+                        <p class="cv-title">Ph.D. Researcher – Electronic Structure, EPC &amp; Transport Modeling</p>
+                        <p class="cv-place">Research Center for Applied Sciences (RCAS), Academia Sinica</p>
+                        <p class="cv-date">2021–Present</p>
+                        <ul class="cv-details">
+                            <li>Performed large-scale <strong>DFT simulations (VASP, Quantum ESPRESSO, JDFTx)</strong> to characterize electronic structure and carrier behavior in TiN and NbN (thin-film and orientation-dependent trends).</li>
+                            <li>Computed <strong>electron–phonon coupling (Wannier90 + EPW)</strong> to extract scattering rates and carrier lifetimes, enabling physics-based interpretation of mobility-limiting mechanisms.</li>
+                            <li>Modeled <strong>anisotropic carrier transport</strong> using Boltzmann transport formalisms; linked crystallographic orientation to transport/relaxation pathways.</li>
+                            <li>Built automated <strong>Python post-processing pipelines</strong> for band/DOS analysis, EPC-derived lifetime statistics, and optical property visualization.</li>
+                            <li>Executed production-scale simulations on HPC clusters (<strong>Slurm/PBS</strong>); optimized convergence strategy (k-point sampling, smearing, cutoff, parallel efficiency).</li>
+                            <li>Initiated <strong>NEGF-based quantum transport simulations using NanoDCAL</strong> for <strong>2D TMD transistor</strong> modeling, targeting I–V characteristics and transport trends.</li>
+                        </ul>
+                    </div>
+                    <div class="cv-item">
+                        <p class="cv-title">M.Sc. Thesis – Strain-Induced Band Engineering in 2D Semiconductors</p>
+                        <p class="cv-place">Department of Physics, IIT Jodhpur</p>
+                        <p class="cv-date">2019–2021</p>
+                        <ul class="cv-details">
+                            <li>Modeled strain-dependent bandgap and band alignment tuning in Janus WSSe monolayers using DFT.</li>
+                            <li>Predicted photocatalytic activity changes by correlating electronic structure modulation with redox potential alignment.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cv-section reveal">
+                    <h3><i class="fas fa-bullseye"></i> Core Technical Competencies</h3>
+                    <div class="cv-item no-marker">
+                        <ul class="cv-details">
+                            <li><strong>Electronic structure engineering:</strong> band structure, DOS, effective mass trends, Fermi-level-dependent behavior</li>
+                            <li><strong>Electron–phonon coupling:</strong> EPC matrix elements, scattering rates, carrier lifetime extraction</li>
+                            <li><strong>Transport modeling:</strong> Boltzmann transport formalism, mobility trends, anisotropic transport interpretation</li>
+                            <li><strong>Quantum transport (NEGF):</strong> transmission spectra, quantum conductance trends, nanoscale transistor I–V workflow</li>
+                            <li><strong>Interfaces:</strong> work function analysis, band alignment concepts, thin-film orientation dependence</li>
+                            <li><strong>Optical response:</strong> dielectric function, absorption spectra, electronic transition analysis</li>
+                            <li><strong>HPC automation:</strong> parallel DFT workflows, convergence optimization, Python post-processing pipelines</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="cv-section reveal">
+                    <h3><i class="fas fa-diagram-project"></i> Selected Projects</h3>
+                    <div class="cv-item">
+                        <p class="cv-title">EPC-limited relaxation in TiN/NbN</p>
+                        <p>Quantified temperature-dependent scattering rates and lifetimes; analyzed anisotropy versus crystal orientation for thin-film transport interpretation.</p>
+                    </div>
+                    <div class="cv-item">
+                        <p class="cv-title">3d TM-doped 2D Perovskite</p>
+                        <p>Quantified optoelectronic property tuning via 3d transition-metal doping and identified a semiconductor-to-half-metal transition.</p>
+                    </div>
+                    <div class="cv-item">
+                        <p class="cv-title">Thermal stress &amp; deformation analysis of silicon chips in epoxy encapsulation</p>
+                        <p>Analyzed thermomechanical stress, deformation behavior, and reliability implications in epoxy-encapsulated silicon chip structures.</p>
+                    </div>
+                    <div class="cv-item">
+                        <p class="cv-title">SolarXPlot – open-source software</p>
+                        <p>Developed an open-source solar cell data analysis and plotting tool for non-coding experts. <a href="https://solarxplot.github.io/SolarXPlotv1/" target="_blank" rel="noopener">Project link ↗</a></p>
+                    </div>
+                    <div class="cv-item">
+                        <p class="cv-title">NEGF-based transistor modeling in 2D TMDs (NanoDCAL)</p>
+                        <p>Initiated a quantum transport workflow for nanoscale FET channels; analyzed transport signatures for device-relevant performance trends.</p>
+                    </div>
+                </div>
+
+                <div class="cv-section reveal">
+                    <h3><i class="fas fa-screwdriver-wrench"></i> Technical Skills</h3>
+                    <div class="cv-item">
+                        <p class="cv-title">Methods</p>
+                        <p class="cv-subtitle">DFT, GW, Wannier interpolation, electron–phonon coupling, Boltzmann transport, NEGF quantum transport</p>
+                    </div>
+                    <div class="cv-item">
+                        <p class="cv-title">Software</p>
+                        <p class="cv-subtitle">VASP, Quantum ESPRESSO, JDFTx, EPW, Wannier90, NanoDCAL</p>
+                    </div>
+                    <div class="cv-item">
+                        <p class="cv-title">Programming</p>
+                        <p class="cv-subtitle">Python (NumPy, Pandas, Matplotlib), Bash, Git</p>
+                    </div>
+                    <div class="cv-item">
+                        <p class="cv-title">HPC</p>
+                        <p class="cv-subtitle">Slurm/PBS job scripting, parallel computing, convergence optimization</p>
+                    </div>
+                    <div class="cv-item">
+                        <p class="cv-title">Visualization</p>
+                        <p class="cv-subtitle">VESTA, XCrySDen, Matplotlib</p>
+                    </div>
+                    <div class="cv-item">
+                        <p class="cv-title">Experimental &amp; characterization background</p>
+                        <p class="cv-subtitle">Licensed/experienced user of XPS, UPS, SEM, AFM, UV-Vis and photoluminescence spectroscopy; thin-film deposition (ALD, PVD, spin/spray/dip/blade coating) and perovskite device fabrication in glovebox environments.</p>
+                    </div>
+                </div>
+
+                <div class="cv-section reveal">
+                    <h3><i class="fas fa-award"></i> Honors &amp; Awards</h3>
+                    <div class="cv-item">
+                        <p class="cv-title">Best Paper Award</p>
+                        <p class="cv-subtitle">Center for Theoretical Physics, National Taiwan University</p>
+                        <p class="cv-date">2025</p>
+                    </div>
+                    <div class="cv-item">
+                        <p class="cv-title">TIGP Fellowship</p>
+                        <p class="cv-subtitle">Taiwan International Graduate Program, Academia Sinica</p>
+                        <p class="cv-date">2021–Present</p>
+                    </div>
+                    <div class="cv-item">
+                        <p class="cv-title">Rajiv Gandhi Academic Scholarship</p>
+                        <p class="cv-subtitle">Government of India</p>
+                        <p class="cv-date">2023</p>
+                    </div>
+                    <div class="cv-item">
+                        <p class="cv-title">INSPIRE Scholarship</p>
+                        <p class="cv-subtitle">Top 1% in HSC Board examinations</p>
+                        <p class="cv-date">2016</p>
+                    </div>
+                </div>
+
+                <div class="cv-section reveal">
+                    <h3><i class="fas fa-chalkboard-user"></i> Conferences, Summer Schools &amp; Workshops</h3>
+                    <div class="cv-item">
+                        <p class="cv-title">26th Asian Workshop on First-Principles Electronic Structure Calculations (ASIAN-26)</p>
+                        <p class="cv-place">Tsukuba International Congress Center, Japan</p>
+                        <p class="cv-subtitle">Poster P-196: "Orientation-Dependent Hot Carrier Relaxation in TiN Thin Films Facilitated by Electron–Phonon Scattering" · Financial support: NCTS</p>
+                        <p class="cv-date">Oct 2025</p>
+                    </div>
+                    <div class="cv-item">
+                        <p class="cv-title">Taiwan Physical Society Annual Meeting</p>
+                        <p class="cv-place">National Sun Yat-sen University, Kaohsiung, Taiwan</p>
+                        <p class="cv-subtitle">Poster: "Impact of Crystal Orientation on Hot Carrier Lifetimes in Titanium Nitride" · Financial support: Academia Sinica</p>
+                        <p class="cv-date">Jan 2025</p>
+                    </div>
+                    <div class="cv-item">
+                        <p class="cv-title">Summer School on First-Principles Computational Materials – Advanced Level</p>
+                        <p class="cv-place">National Tsing Hua University (NTHU), Hsinchu, Taiwan</p>
+                        <p class="cv-subtitle">Financial support: NCTS</p>
+                        <p class="cv-date">2024</p>
+                    </div>
+                    <div class="cv-item">
+                        <p class="cv-title">22nd Workshop on First-Principles Computational Materials Physics</p>
+                        <p class="cv-place">Tainan, Taiwan</p>
+                        <p class="cv-subtitle">Financial support: NCTS</p>
+                        <p class="cv-date">Aug 2024</p>
+                    </div>
+                </div>
+
+                <div class="cv-section reveal">
+                    <h3><i class="fas fa-users"></i> Network &amp; Membership</h3>
+                    <div class="cv-item">
+                        <p class="cv-title">Section Editor</p>
+                        <p class="cv-place">Indonesian Physical Review</p>
+                        <p class="cv-date">2020–2021</p>
+                        <p class="cv-link"><a href="https://ipr.unram.ac.id/index.php/ipr/about/editorialTeam" target="_blank" rel="noopener">Editorial Team ↗</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TUTORIALS ===================== -->
+    <section id="tutorials" class="block bg-alt">
+        <div class="block-inner">
+            <div class="section-head reveal">
+                <span class="eyebrow">Learn</span>
+                <h2>Tutorials</h2>
+                <p>Notes and walkthroughs on scientific computing tools.</p>
+            </div>
+            <div class="tutorials-grid">
+                <div class="tutorial-category reveal">
+                    <h3>Python Basics</h3>
+                    <div class="tutorial-cards">
+                        <div class="tutorial-card">
+                            <div class="card-content">
+                                <h4>Introduction to Python</h4>
+                                <p>Learn the basics of Python programming, including syntax, data types, and control structures.</p>
+                                <div class="tutorial-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">Programming</span>
+                                </div>
+                                <a href="tutorials/python/basics/index.html" class="tutorial-link">View Tutorial <i class="fas fa-arrow-right"></i></a>
+                                <p class="tutorial-note">To be continued...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tutorial-category reveal" data-delay="1">
+                    <h3>MATLAB Basics</h3>
+                    <div class="tutorial-cards">
+                        <div class="tutorial-card">
+                            <div class="card-content">
+                                <h4>Introduction to MATLAB</h4>
+                                <p>Get started with MATLAB, covering basic operations, plotting, and scripting.</p>
+                                <div class="tutorial-tags">
+                                    <span class="tag">MATLAB</span>
+                                    <span class="tag">Engineering</span>
+                                </div>
+                                <a href="tutorials/matlab/basics/index.html" class="tutorial-link">View Tutorial <i class="fas fa-arrow-right"></i></a>
+                                <p class="tutorial-note">To be continued...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="block">
+        <div class="block-inner">
+            <div class="section-head reveal">
+                <span class="eyebrow">Say hello</span>
+                <h2>Contact</h2>
+                <p>Happy to discuss research, collaborations, or opportunities.</p>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item reveal">
                     <i class="fas fa-envelope"></i>
-                </a>
+                    <p>verma.12@alumni.iitj.ac.in</p>
+                </div>
+                <div class="contact-item reveal" data-delay="1">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Research Center for Applied Sciences, Academia Sinica, Taipei, Taiwan</p>
+                </div>
+                <div class="contact-item reveal" data-delay="2">
+                    <i class="fas fa-phone"></i>
+                    <p>(+886) 908 363 245</p>
+                </div>
+                <div class="contact-item reveal" data-delay="3">
+                    <i class="fas fa-graduation-cap"></i>
+                    <p>National Taiwan University (TIGP) · Academia Sinica (RCAS)</p>
+                </div>
             </div>
-        </div>
-    </section>
 
-    <section id="research" class="research">
-        <h2>Research Interests</h2>
-        <div class="research-grid">
-            <div class="research-item">
-                <h3>Density Functional Theory</h3>
-                <p>Computational modeling of materials at the quantum level</p>
-                <p class="highlight">Current focus: DFT simulations for novel materials design</p>
-            </div>
-            <div class="research-item">
-                <h3>Electron-Phonon Interactions</h3>
-                <p>Investigating the coupling between electrons and lattice vibrations</p>
-                <p class="highlight">Applications in: Superconductivity and thermal transport</p>
-            </div>
-            <div class="research-item">
-                <h3>Chemical Bonding</h3>
-                <p>Studying the nature of chemical bonds in materials</p>
-                <p class="highlight">Focus on: Electronic structure and bond characteristics</p>
-            </div>
-            <div class="research-item">
-                <h3>Experimental Perovskite Solar Cells</h3>
-                <p>Developing high-efficiency photovoltaic devices</p>
-                <p class="highlight">Research areas: Stability enhancement and performance optimization</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="publications" class="publications">
-        <h2>Selected Publications</h2>
-        
-        <!-- 2024 Publications -->
-        <h3 class="year-heading">2024</h3>
-        <div class="publications-grid">
-            <div class="publication-item">
-                <p class="pub-number">3.</p>
-                <p class="pub-title">Hybrid-Protected Perovskite Quantum Dot Films with Ultra-High Efficiency and Stability for LED Backlighting</p>
-                <p class="authors">Loan Thi Ngo, Wen-Tse Huang, <strong>Hemant Verma</strong>, Yen-Huei Lin, Ling-Wei Liang, Chia-Te Fang, Jia-Cheng Chang, Wen-Chung Chu, Chaochin Su*, Chao-Cheng Kaun*, and Ru-Shi Liu*</p>
-                <p class="journal"><em>ACS Applied Materials & Interfaces</em> <strong>2024</strong>, <em>16</em> (48), 66262-66272. <a href="https://doi.org/10.1021/acsami.4c15012" target="_blank">[Link]</a></p>
-            </div>
-            <div class="publication-item">
-                <p class="pub-number">2.</p>
-                <p class="pub-title">Cascaded-Type Band Alignment of a WBG Perovskite/NBG Perovskite For Heterostructure Solar Cells</p>
-                <p class="authors">Anjali Thakran, Anisha Mohapatra, <strong>Hemant Verma</strong>, Mario Hofmann, Zeeshan Alam Ansari, Chintam Hanmandlu, Chung Hsin Lu, and Chih Wei Chu*</p>
-                <p class="journal"><em>ACS Applied Energy Materials</em> <strong>2024</strong>, <em>7</em> (8), 3039-3048. <a href="https://doi.org/10.1021/acsaem.3c02258" target="_blank">[Link]</a></p>
-            </div>
-        </div>
-        
-        <!-- 2021 Publications -->
-        <h3 class="year-heading">2021</h3>
-        <div class="publications-grid">
-            <div class="publication-item">
-                <p class="pub-number">1.</p>
-                <p class="pub-title">Enhanced Photocatalytic Activity in Strain Engineered Janus WSSe Monolayers</p>
-                <p class="authors"><strong>Hemant Verma</strong>, Abhijeet J. Kale, Chandra Prakash, Moussab Harb, Ambesh Dixit*</p>
-                <p class="journal"><em>Journal of Electronic Materials</em> <strong>2021</strong>, <em>50</em>, 7230-7239. <a href="https://doi.org/10.1007/s11664-021-09215-w" target="_blank">[Link]</a></p>
-            </div>
-        </div>
-        <p class="footnote">* Corresponding author</p>
-    </section>
-
-    <!-- Teaching section removed as requested -->
-
-    <section id="cv" class="cv">
-        <h2>Curriculum Vitae</h2>
-        <div class="cv-content">
-            <div class="cv-header">
-                <div class="cv-photo">
-                    <img src="assets/photos/profile.jpg" alt="Hemant Verma" class="profile-image">
-                </div>
-                <div class="cv-info">
-                    <p>Hemant Verma, M.Sc. Physics</p>
-                    <p>Email: verma.12@alumni.iitj.ac.in</p>
-                    <p>Phone: (+886) 908 363 245</p>
-                </div>
-            </div>
-            
-            <div class="cv-section">
-                <h3>Education</h3>
-                <div class="cv-item">
-                    <p class="cv-title">Ph.D. candidate</p>
-                    <p class="cv-place">Research Centre for Applied Sciences, Taipei, Taiwan</p>
-                    <p class="cv-date">2021-Present</p>
-                </div>
-                <div class="cv-item">
-                    <p class="cv-title">M.Sc. in Physics</p>
-                    <p class="cv-place">Indian Institute of Technology, Jodhpur, India</p>
-                    <p class="cv-date">2019-2021</p>
-                </div>
-                <div class="cv-item">
-                    <p class="cv-title">B.Sc. in PCM</p>
-                    <p class="cv-place">University of Rajasthan, India</p>
-                    <p class="cv-date">2016-2019</p>
-                </div>
-            </div>
-            
-            <div class="cv-section">
-                <h3>Research Experience</h3>
-                <div class="cv-item">
-                    <p class="cv-title">Ph.D. candidate</p>
-                    <p class="cv-place">Research Centre for Applied Sciences, Taipei, Taiwan</p>
-                    <p class="cv-date">2021-Present</p>
-                    <ul class="cv-details">
-                        <li>Investigating hot carrier dynamics in plasmonic transition metal nitrides through integrated experimental and theoretical approaches</li>
-                        <li>Enhancing the long-term stability of perovskite solar cells, contributing to next-generation sustainable energy solutions</li>
-                        <li>Developing innovative and efficient nanoparticle synthesis methods, including advanced grinding and dispersion techniques</li>
-                        <li>Specializing in high-precision thin-film deposition using both solution processing and vapor deposition techniques to ensure optimal material interfaces</li>
-                    </ul>
-                </div>
-                <div class="cv-item">
-                    <p class="cv-title">Master student</p>
-                    <p class="cv-place">IIT Jodhpur</p>
-                    <p class="cv-date">2019-2021</p>
-                    <ul class="cv-details">
-                        <li>Researched photocatalytic performance of 2D transition metal dichalcogenides (TMDs) for efficient hydrogen production through water splitting (2020-21)</li>
-                        <li>Optimized organo-halide perovskite thin films for enhanced optoelectronic performance and stability (2019-20)</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="cv-section">
-                <h3>Technical Skills</h3>
-                
-                <div class="cv-item">
-                    <p class="cv-title">Fabrication of Optoelectronic Devices</p>
-                    <ul class="cv-details">
-                        <li>Expert in fabricating advanced perovskite single junction and heterojunction devices, silicon/perovskite tandem architectures, and bifacial perovskite solar cells (PSCs)</li>
-                    </ul>
-                </div>
-                
-                <div class="cv-item">
-                    <p class="cv-title">Thin-film Fabrication</p>
-                    <ul class="cv-details">
-                        <li>Proficient in advanced thin-film vapor deposition techniques including Atomic Layer Deposition (ALD) and Physical Vapor Deposition (PVD)</li>
-                        <li>Skilled in multiple solution-processable thin-film deposition methods including spin coating, spray coating, dip coating, blade coating, and transfer printing techniques</li>
-                    </ul>
-                </div>
-                
-                <div class="cv-item">
-                    <p class="cv-title">X-ray/UV Photoelectron Spectroscopy</p>
-                    <p class="cv-subtitle">Licensed user for X-ray/UV photoelectron spectroscopy (XPS and UPS)</p>
-                    <ul class="cv-details">
-                        <li>Extensive experience in conducting surface and depth profile elemental analysis of 3D/2D inorganic and organic heterostructure thin films</li>
-                        <li>Advanced expertise in electronic work function analysis through ultraviolet photoelectron spectroscopy (UPS) measurements</li>
-                    </ul>
-                </div>
-                
-                <div class="cv-item">
-                    <p class="cv-title">Scanning Electron Microscopy</p>
-                    <p class="cv-subtitle">Licensed user for Scanning Electron Microscope (SEM)</p>
-                    <ul class="cv-details">
-                        <li>Extensive hands-on experience in characterizing and investigating various inorganic 2D and 3D materials for advanced optoelectronic applications</li>
-                    </ul>
-                </div>
-                
-                <div class="cv-item">
-                    <p class="cv-title">Atomic Force Microscopy</p>
-                    <p class="cv-subtitle">Licensed user for Atomic Force Microscopy (AFM)</p>
-                    <ul class="cv-details">
-                        <li>Collaborated with multiple research laboratories to analyze material surface properties and morphology using advanced AFM techniques</li>
-                        <li>Developed specialized AFM methodologies for solar cell applications, yielding valuable insights for performance optimization</li>
-                    </ul>
-                </div>
-                
-                <div class="cv-item">
-                    <p class="cv-title">Spectroscopy and Microscopy</p>
-                    <p class="cv-subtitle">Experienced user in UV-Visible Spectroscopy and optical microscopy</p>
-                    <ul class="cv-details">
-                        <li>Analyzed absorption spectra of polymers and fullerenes to investigate molecular stacking in bulk heterojunction thin films for organic and perovskite solar cell applications</li>
-                        <li>Characterized optical properties of perovskite solar cells and various selective transport layers to optimize device performance</li>
-                    </ul>
-                </div>
-                
-                <div class="cv-item">
-                    <p class="cv-title">Photoluminescence Spectroscopy</p>
-                    <p class="cv-subtitle">Experienced user for PL measurements</p>
-                    <ul class="cv-details">
-                        <li>Specialized in analyzing charge transport layer efficiency through photoluminescence intensity quenching techniques</li>
-                    </ul>
-                </div>
-                
-                <div class="cv-item">
-                    <p class="cv-title">Controlled Environment Processing</p>
-                    <p class="cv-subtitle">Experienced user of glovebox systems</p>
-                    <ul class="cv-details">
-                        <li>Proficient in fabricating and handling sensitive perovskite devices in controlled argon and nitrogen environments</li>
-                    </ul>
-                </div>
-                
-                <div class="cv-item">
-                    <p class="cv-title">Computational Materials Science</p>
-                    <p class="cv-subtitle">Quantum Espresso, VASP, JDFTX</p>
-                    <p class="cv-subtitle">Expert in ab initio simulations for optoelectronic properties</p>
-                    <ul class="cv-details">
-                        <li>Modeling electron-phonon coupling and hot carrier dynamics in transition metal nitrides for advanced optoelectronic applications</li>
-                        <li>Conducting comprehensive analyses of photocatalytic performance in Janus TMD monolayers through band structure calculations, energy level alignment, total/joint density of states (TDOS/JDOS), and charge transfer dynamics</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="cv-section">
-                <h3>Fellowships and Grants</h3>
-                
-                <div class="cv-item">
-                    <p class="cv-title">TIGP (Taiwan International Graduate Program) Fellowship</p>
-                    <p class="cv-subtitle">Highly competitive interdisciplinary research program supporting outstanding international Ph.D. students</p>
-                    <p class="cv-date">2021</p>
-                </div>
-                
-                <div class="cv-item">
-                    <p class="cv-title">Inspire Scholarship</p>
-                    <p class="cv-subtitle">Prestigious award granted to the top 1% of students in HSC board examinations for exceptional academic performance</p>
-                    <p class="cv-date">2016</p>
-                </div>
-                
-                <div class="cv-item">
-                    <p class="cv-title">Rajiv Gandhi Scholarship for Academic Excellence</p>
-                    <p class="cv-subtitle">Merit-based scholarship awarded by the Government of Rajasthan, India, recognizing outstanding academic achievements</p>
-                    <p class="cv-date">2023</p>
-                </div>
-            </div>
-            
-            <div class="cv-section">
-                <h3>Leadership & Mentorship</h3>
-                <div class="cv-item">
-                    <ul class="cv-details">
-                        <li>Mentored undergraduate interns and master's students in conducting advanced dynamics experiments and data analysis</li>
-                        <li>Provided comprehensive training to graduate students on sophisticated characterization tools including XPS, UPS, AFM, SEM, and XRD</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="cv-section">
-                <h3>Network & Membership</h3>
-                <div class="cv-item">
-                    <p class="cv-title">Section Editor</p>
-                    <p class="cv-place">Indonesian Physical Review</p>
-                    <p class="cv-date">2020-2021</p>
-                    <p class="cv-link"><a href="https://ipr.unram.ac.id/index.php/ipr/about/editorialTeam" target="_blank">Editorial Team</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="tutorials" class="tutorials">
-        <h2>Tutorials</h2>
-        <div class="tutorials-grid">
-            <!-- Python Tutorials -->
-            <div class="tutorial-category">
-                <h3>Python Basics</h3>
-                <div class="tutorial-cards">
-                    <div class="tutorial-card">
-                        <div class="card-content">
-                            <h4>Introduction to Python</h4>
-                            <p>Learn the basics of Python programming, including syntax, data types, and control structures.</p>
-                            <div class="tutorial-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">Programming</span>
-                            </div>
-                            <a href="tutorials/python/basics/index.html" class="tutorial-link">View Tutorial</a>
-                            <p class="tutorial-note">To be continued...</p>
-                        </div>
+            <form id="contact-form" class="contact-form reveal" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <h3 class="form-title"><i class="fas fa-paper-plane"></i> Send a message</h3>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="cf-name">Name</label>
+                        <input id="cf-name" name="name" type="text" required placeholder="Your name">
+                    </div>
+                    <div class="form-field">
+                        <label for="cf-email">Email</label>
+                        <input id="cf-email" name="email" type="email" required placeholder="you@example.com">
                     </div>
                 </div>
-            </div>
-
-            <!-- MATLAB Tutorials -->
-            <div class="tutorial-category">
-                <h3>MATLAB Basics</h3>
-                <div class="tutorial-cards">
-                    <div class="tutorial-card">
-                        <div class="card-content">
-                            <h4>Introduction to MATLAB</h4>
-                            <p>Get started with MATLAB, covering basic operations, plotting, and scripting.</p>
-                            <div class="tutorial-tags">
-                                <span class="tag">MATLAB</span>
-                                <span class="tag">Engineering</span>
-                            </div>
-                            <a href="tutorials/matlab/basics/index.html" class="tutorial-link">View Tutorial</a>
-                            <p class="tutorial-note">To be continued...</p>
-                        </div>
-                    </div>
+                <div class="form-field">
+                    <label for="cf-message">Message</label>
+                    <textarea id="cf-message" name="message" rows="5" required placeholder="How can I help?"></textarea>
                 </div>
-            </div>
+                <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send message</button>
+                <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <div class="contact-info">
-            <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <p>Email: verma.12@alumni.iitj.ac.in</p>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>Location: Research Centre for Applied Sciences, Academia Sinica, Taipei, Taiwan</p>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <p>Phone: (+886) 908 363 245</p>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-graduation-cap"></i>
-                <p>Academic Affiliation: National Taiwan University</p>
-            </div>
-        </div>
-    </section>
-
+    <!-- ===================== FOOTER ===================== -->
     <footer>
         <div class="footer-content">
             <div class="footer-social">
-                <a href="https://github.com/hemant0723" class="social-icon" title="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/hemantverma2001/" class="social-icon" title="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://scholar.google.com/citations?user=gfbfpP8AAAAJ&hl=en" class="social-icon" title="Google Scholar">
-                    <i class="fas fa-graduation-cap"></i>
-                </a>
-                <a href="https://orcid.org/0000-0003-0147-2336" class="social-icon" title="ORCID">
-                    <i class="fab fa-orcid"></i>
-                </a>
+                <a href="https://scholar.google.com/citations?user=gfbfpP8AAAAJ&hl=en" class="social-icon" title="Google Scholar" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i></a>
+                <a href="https://orcid.org/0000-0003-0147-2336" class="social-icon" title="ORCID" target="_blank" rel="noopener"><i class="fab fa-orcid"></i></a>
+                <a href="https://github.com/hemant0723" class="social-icon" title="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/hemantverma2001/" class="social-icon" title="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
             </div>
             <div class="footer-links">
                 <a href="#home">Home</a>
+                <a href="#news">News</a>
                 <a href="#research">Research</a>
+                <a href="#software">Software</a>
                 <a href="#publications">Publications</a>
                 <a href="#cv">CV</a>
                 <a href="#tutorials">Tutorials</a>
                 <a href="#contact">Contact</a>
             </div>
             <div class="footer-info">
-                <p>&copy; 2025 Hemant Verma. All rights reserved.</p>
-                <p>Last updated: April 2025</p>
+                <p>&copy; <span data-current-year>2026</span> Hemant Verma. All rights reserved.</p>
+                <p>Built as a static site · Last updated June 2026</p>
             </div>
         </div>
-        <div class="back-to-top">
-            <a href="#home" title="Back to Top">
-                <i class="fas fa-arrow-up"></i>
-            </a>
-        </div>
     </footer>
+
+    <div class="back-to-top">
+        <a href="#home" title="Back to top"><i class="fas fa-arrow-up"></i></a>
+    </div>
+
+    <!--
+      Optional privacy-friendly analytics — pick ONE and uncomment (see README):
+      GoatCounter:  <script data-goatcounter="https://YOURCODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+      Plausible:    <script defer data-domain="hemant0723.github.io" src="https://plausible.io/js/script.js"></script>
+    -->
 
     <script src="js/main.js"></script>
 </body>

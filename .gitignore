@@ -1,0 +1,7 @@
+# Local Claude Code state (never publish)
+.claude/settings.local.json
+.claude/worktrees/
+
+# OS junk
+Thumbs.db
+.DS_Store
