@@ -353,6 +353,17 @@
             });
         }
 
+        /* ---------- Atom avatar: photoexcitation on click ---------- */
+        const heroAvatar = document.getElementById('heroAvatar');
+        if (heroAvatar) {
+            let exciteTimer;
+            heroAvatar.addEventListener('click', () => {
+                heroAvatar.classList.add('excited');
+                clearTimeout(exciteTimer);
+                exciteTimer = setTimeout(() => heroAvatar.classList.remove('excited'), 1400);
+            });
+        }
+
         /* ---------- Copy email on click ---------- */
         document.querySelectorAll('.contact-item').forEach((item) => {
             const icon = item.querySelector('i.fa-envelope');
