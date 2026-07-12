@@ -31,7 +31,7 @@ robots.txt / sitemap.xml  SEO
 css/style.css           Design system (light + dark themes)
 js/main.js              Theme, scroll-spy, reveal, filter, cite, count-up, contact form
 assets/
-  cv.pdf                CV download (replace the placeholder — see below)
+  cv.pdf                CV download (served by the CV header button)
   og-card.svg           Branded social-share card (export to PNG — see below)
   images/               Hero background
   photos/profile.jpg    Profile photo (add this file)
@@ -47,8 +47,8 @@ Optionally serve it: `python -m http.server` or `npx serve`, then visit the prin
 
 - **Publications** — edit the `.pub-year-group` blocks in `index.html`; update each paper's hidden
   `<pre class="bibtex">` so the copy button stays accurate.
-- **CV PDF** — replace `assets/cv.pdf` (currently a placeholder). Once it's a real PDF, a
-  "Download CV" button can be re-enabled in the CV header.
+- **CV PDF** — replace `assets/cv.pdf` with a new export to update the "Download CV" button
+  in the CV header.
 - **Profile photo** — add `assets/photos/profile.jpg` (square works best); it appears automatically.
 - **Contact form** — create a free form at [Formspree](https://formspree.io), then replace
   `YOUR_FORM_ID` in the `<form action="…">` in `index.html`.
