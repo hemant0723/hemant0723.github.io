@@ -4,7 +4,7 @@ Personal academic website for **Hemant Verma**, Ph.D. candidate in Computational
 Physics (National Taiwan University · Academia Sinica). First-principles DFT, electron–phonon
 coupling, and NEGF quantum transport for 2D semiconductor devices.
 
-🔗 **Live:** https://hemant0723.github.io/academic-website/
+🔗 **Live:** https://hemant0723.github.io/
 
 ## Features
 
