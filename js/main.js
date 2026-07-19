@@ -387,3 +387,41 @@
         });
     });
 })();
+
+/* ---------- Drude download counter (GitHub Releases API) ---------- */
+(function () {
+    const el = document.getElementById('drudeDownloads');
+    if (!el) return;
+    const numEl = el.querySelector('.dl-num');
+    const REPO = 'hemant0723/hemant0723.github.io';
+    const TAG = 'v0.6.1';
+    const ASSET = 'Drude-0.6.1.exe';
+    const CACHE_KEY = 'drude-dl-count';
+    const CACHE_TTL = 10 * 60 * 1000; // 10 minutes
+
+    function show(n) {
+        if (typeof n !== 'number') return;
+        numEl.textContent = n.toLocaleString();
+        el.hidden = false;
+    }
+
+    // Show a cached value immediately (GitHub's unauth API allows ~60 req/hr per IP).
+    try {
+        const cached = JSON.parse(localStorage.getItem(CACHE_KEY) || 'null');
+        if (cached && Date.now() - cached.t < CACHE_TTL) show(cached.n);
+    } catch (e) { /* ignore */ }
+
+    fetch('https://api.github.com/repos/' + REPO + '/releases/tags/' + TAG, {
+        headers: { 'Accept': 'application/vnd.github+json' }
+    })
+        .then((r) => (r.ok ? r.json() : null))
+        .then((data) => {
+            if (!data || !Array.isArray(data.assets)) return; // release not published yet
+            const asset = data.assets.find((a) => a.name === ASSET);
+            if (!asset) return;
+            const n = asset.download_count || 0;
+            show(n);
+            try { localStorage.setItem(CACHE_KEY, JSON.stringify({ n: n, t: Date.now() })); } catch (e) { /* ignore */ }
+        })
+        .catch(() => { /* offline / rate-limited → keep cached or hidden */ });
+})();
